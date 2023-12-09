@@ -11,8 +11,8 @@ show_hero: true
 menu:
   - title: Home
     url: /
-  - title: About
-    url: /about
+  - title: SB-Quotation
+    url: /SB-Quotation
   - title: Contact
     url: /contact
   - title: Feed
