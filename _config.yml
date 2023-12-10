@@ -1,7 +1,7 @@
 # Site Settings
 name: ICER233'S BLOG
 title: ICER233'S BLOG
-description: JICER233'S BLOG
+description: ICER233'S BLOG
 tags:
   - blog
   - template
@@ -29,8 +29,6 @@ formspree_form_id:
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: icer233
-
-
 
 # Posts Settings
 show_time_bar: false
@@ -100,4 +98,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.2
+version: v11.4.514
