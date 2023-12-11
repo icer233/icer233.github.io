@@ -16,8 +16,8 @@ menu:
     url: /SB-Quotation
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
+  - title: Tags
+    url: /tags
 email: tommydai0909@163.com
 # See: https://disqus.com/
 disqus_username: 
