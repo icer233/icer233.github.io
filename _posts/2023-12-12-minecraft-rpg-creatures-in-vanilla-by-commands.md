@@ -9,8 +9,8 @@ optimized_image:
 category: gaming
 tags:
   - minecraft
-  - command
-  - datapack
+  - "指令"
+  - "数据包"
 author: icer233
 paginate: false
 ---

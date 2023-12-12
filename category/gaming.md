@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Gaming
+title: "游戏"
 slug: gaming
-description: A category for gaming related posts.
+description: "有关游戏的帖子"
 ---

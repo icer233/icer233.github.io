@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Code
+title: "代码"
 slug: code
-description: A category for code related posts.
+description: "有关代码的帖子"
 ---

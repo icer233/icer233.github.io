@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Maths
+title: "数学"
 slug: maths
-description: A category for maths.
+description: "有关数学的帖子"
 ---
