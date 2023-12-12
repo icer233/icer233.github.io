@@ -1,0 +1,41 @@
+translations:
+  text:
+    new_post: "新帖"
+    see_also: "再看看……"
+    search: "搜索"
+    author: "作者"
+    share: "分享"
+    comments: "评论"
+  button:
+    read_now: "开始阅读"
+    share_on_twitter: "分享到Twitter"
+    share_on_facebook: "分享到Facebook"
+  pagination:
+    page: "页码："
+    of: "共"
+    next_page: "下一页"
+    next_post: "上一页"
+  recommendation:
+    text: "接下来为什么不再读点什么？"
+    back_btn: "回到顶部"
+  error_404:
+    title: "页面未找到 :("
+    message: "抱歉，未找到您所访问的页面"
+    image_alt: "404 - 页面未找到"
+  contact:
+    title: "和我说说"
+    subject: "新的联系！"
+    submit_btn: "发送"
+    placeholders:
+      name: "你的姓名"
+      email: "你的邮箱"
+      message: "你的信息"
+    errors:
+      locale: "cn"
+      empty_name: "姓名是必须的"
+      empty_email: "邮箱是必须的"
+      invalid_email: "邮箱不合法"
+      empty_message: "信息是必需的"
+    after_send:
+      title: "信息已发送！"
+      message: "感谢您给我发信息，我会尽快回复。"
