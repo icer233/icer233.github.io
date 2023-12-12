@@ -10,13 +10,13 @@ tags:
   - netlify
 show_hero: true
 menu:
-  - title: Home
+  - title: "主页"
     url: /
-  - title: SB-Quotation
+  - title: "SB语录"
     url: /SB-Quotation
-  - title: Contact
+  - title: "联系我"
     url: /contact
-  - title: Tags
+  - title: "标签"
     url: /tags
 email: tommydai0909@163.com
 # See: https://disqus.com/

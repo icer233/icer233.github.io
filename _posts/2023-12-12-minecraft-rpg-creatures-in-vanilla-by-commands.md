@@ -2,9 +2,9 @@
 date: 2023-12-12 13:25:51
 layout: post
 title: "【命令/数据包】如何制作原版RPG生物/如何间接绕过原版血量上限"
-subtitle: "【命令/数据包】如何制作原版RPG生物/如何间接绕过原版血量上限"
+subtitle: "让你成为一名RPG数据包作者！"
 description: "常用的一些在原版中制作突破原版属性限制的RPG生物的方式，以及一部分以较低代价制作更智能的生物行为的思路"
-image: https://img-blog.csdnimg.cn/img_convert/53bda113f01159f5a1fbde301ecbd300.png
+image: https://i.niupic.com/images/2023/12/12/dBVl.jpg
 optimized_image:
 category: gaming
 tags:
@@ -15,10 +15,8 @@ author: icer233
 paginate: false
 ---
 
-# 【命令/数据包】如何制作原版RPG生物/如何间接绕过原版血量上限
 
-
-## 引言
+# 引言
 
 RPG类游戏一直是Minecraft地图以及服务器的香饽饽。
 
@@ -34,7 +32,7 @@ RPG类游戏一直是Minecraft地图以及服务器的香饽饽。
 
 因此，本文特介绍一下常用的一些在原版中制作突破原版属性限制的RPG生物的方式，以及一部分以较低代价制作更智能的生物行为的思路
 
-## 第一部分：原版修修补补能达到的最大生命值？
+# 第一部分：原版修修补补能达到的最大生命值？
 
 首先要明确一点：原版生物的生命值是由nbt中的Attribute控制的。1.15之前的版本为`Attribute.maxHealth`, 1.15后统一改成了`Attribute.max_health`
 
@@ -48,7 +46,7 @@ RPG类游戏一直是Minecraft地图以及服务器的香饽饽。
 
 这有效缓解了一部分对数值的渴望。然而，这显然是不够的。因此，接下来的方案，请您接着往下看
 
-## 第二部分：引入假血(记分板)的概念
+# 第二部分：引入假血(记分板)的概念
 
 严格意义上讲，生命值只是一种简单的统计方式。生命值>0意味着该生物可以继续行动，生命值<0判定该生物死亡，掉落物品且清除该实体  
 
