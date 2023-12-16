@@ -37,8 +37,11 @@ Git有什么特点？简单来说就是：高端大气上档次！
 如果你用Microsoft Word写过长篇大论，那你一定有这样的经历：
 
 想删除一个段落，又怕将来想恢复找不回来怎么办？有办法，先把当前文件“另存为……”一个新的Word文件，再接着改，改到一定程度，再“另存为……”一个新文件，这样一直改下去，最后你的Word文档变成了这样：
+
+
+
 |文件名|修改时间|
-|:--:|:--:|
+|:---------------:|:-------:|
 |readme.doc|12-16|
 |readme-修改.doc|12-16|
 |readme - 副本.doc|12-16|
@@ -56,7 +59,7 @@ Git有什么特点？简单来说就是：高端大气上档次！
 这个软件用起来就应该像这个样子，能记录每次文件的改动：
 
 | 版本 | 文件名      | 用户 | 说明                   | 日期        |
-| :--- | :---------- | :--- | :--------------------- | :---------- |
+| :---: | :----------: | :---: | :--------------------: | :----------: |
 | 1    | service.doc | 张三 | 删除了软件服务条款5    | 12/16 10:38 |
 | 2    | service.doc | 张三 | 增加了License人数限制  | 12/16 18:09 |
 | 3    | service.doc | 李四 | 财务部门调整了合同金额 | 12/17 9:51  |
@@ -92,7 +95,7 @@ Linus一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分
 
 先说集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，然后开始干活，干完活了，再把自己的活推送给中央服务器。中央服务器就好比是一个图书馆，你要改一本书，必须先从图书馆借出来，然后回到家自己改，改完了，再放回图书馆。
 
-![1](https://www.liaoxuefeng.com/files/attachments/918921540355872/l)
+![1](https://i.niupic.com/images/2023/12/16/dPtN.jpg)
 
 集中式版本控制系统最大的毛病就是必须联网才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟，这还不得把人给憋死啊。
 
@@ -102,7 +105,7 @@ Linus一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分
 
 在实际使用分布式版本控制系统的时候，其实很少在两人之间的电脑上推送版本库的修改，因为可能你们俩不在一个局域网内，两台电脑互相访问不了，也可能今天你的同事病了，他的电脑压根没有开机。因此，分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。
 
-![](https://www.liaoxuefeng.com/files/attachments/918921562236160/l)
+![2](https://i.niupic.com/images/2023/12/16/dPJ6.jpg)
 
 当然，Git的优势不单是不必联网这么简单，后面我们还会看到Git极其强大的分支管理，把SVN等远远抛在了后面。
 
@@ -138,7 +141,7 @@ sudo apt-get install git
 
 如果是其他Linux版本，可以直接通过源码安装。先从Git官网下载源码，然后解压，依次输入：`./config`，`make`，`sudo make install`这几个命令安装就好了。
 
-## 在Mac OS X上安装Git
+## 在MacOS上安装Git
 
 如果你正在使用Mac做开发，有两种安装Git的方法。
 
@@ -494,7 +497,7 @@ Git的版本回退速度非常快，因为Git在内部有个指向当前版本�
 
 ```ascii
 ┌────┐
-│HEAD   │
+│HEAD    │
 └────┘
    │
    └──▶ ○ append GPL
@@ -508,7 +511,7 @@ Git的版本回退速度非常快，因为Git在内部有个指向当前版本�
 
 ```ascii
 ┌────┐
-│HEAD   │
+│HEAD    │
 └────┘
    │
    │      ○ append GPL
@@ -968,11 +971,11 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴`id_rsa.pub`文件的内容：
 
-![7](https://www.liaoxuefeng.com/files/attachments/919021379029408/0)
+![7](https://i.niupic.com/images/2023/12/16/dPJw.png)
 
 点“Add Key”，你就应该看到已经添加的Key：
 
-![github-addkey-2](https://www.liaoxuefeng.com/files/attachments/919021395420160/0)
+![github-addkey-2](https://i.niupic.com/images/2023/12/16/dPJA.png)
 
 为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
 
@@ -994,11 +997,11 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 首先，登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库：
 
-![github-create-repo-1](https://www.liaoxuefeng.com/files/attachments/919021631860000/0)
+![github-create-repo-1](https://i.niupic.com/images/2023/12/16/dPJF.png)
 
 在Repository name填入`learngit`，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：
 
-![github-create-repo-2](https://www.liaoxuefeng.com/files/attachments/919021652277920/0)
+![github-create-repo-2](https://i.niupic.com/images/2023/12/16/dPJE.png)
 
 目前，在GitHub上的这个`learngit`仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
 
@@ -1033,7 +1036,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 推送成功后，可以立刻在GitHub页面中看到远程库的内容已经和本地一模一样：
 
-![github-repo](https://www.liaoxuefeng.com/files/attachments/919021675995552/0)
+![github-repo](https://i.niupic.com/images/2023/12/16/dPJJ.png)
 
 从现在起，只要本地作了提交，就可以通过命令：
 
@@ -1103,11 +1106,11 @@ $ git remote rm origin
 
 首先，登陆GitHub，创建一个新的仓库，名字叫`gitskills`：
 
-![github-init-repo](https://www.liaoxuefeng.com/files/attachments/919021808263616/0)
+![github-init-repo](https://i.niupic.com/images/2023/12/16/dPJO.png)
 
 我们勾选`Initialize this repository with a README`，这样GitHub会自动为我们创建一个`README.md`文件。创建完毕后，可以看到`README.md`文件：
 
-![github-init-repo-2](https://www.liaoxuefeng.com/files/attachments/919021836828288/0)
+![github-init-repo-2](https://i.niupic.com/images/2023/12/16/dPJN.png)
 
 现在，远程库已经准备好了，下一步是用命令`git clone`克隆一个本地库：
 
@@ -1228,7 +1231,7 @@ Switched to branch 'master'
 
 切换回`master`分支后，再查看一个`readme.txt`文件，刚才添加的内容不见了！因为那个提交是在`dev`分支上，而`master`分支此刻的提交点并没有变：
 
-![git-br-on-master](https://www.liaoxuefeng.com/files/attachments/919022533080576/0)
+![git-br-on-master](https://i.niupic.com/images/2023/12/16/dPJS.png)
 
 现在，我们把`dev`分支的工作成果合并到`master`分支上：
 
@@ -1499,7 +1502,7 @@ $ git log --graph --pretty=oneline --abbrev-commit
 
 可以看到，不使用`Fast forward`模式，merge后就像这样：
 
-![git-no-ff-mode](https://www.liaoxuefeng.com/files/attachments/919023225142304/0)
+![git-no-ff-mode](https://i.niupic.com/images/2023/12/16/dPJX.png)
 
 ### 分支策略
 
@@ -1513,7 +1516,7 @@ $ git log --graph --pretty=oneline --abbrev-commit
 
 所以，团队合作的分支看起来就像这样：
 
-![git-br-policy](https://www.liaoxuefeng.com/files/attachments/919023260793600/0)
+![git-br-policy](https://i.niupic.com/images/2023/12/16/dPJZ.png)
 
 ### 小结
 
@@ -1891,7 +1894,7 @@ CONFLICT (add/add): Merge conflict in env.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-这回`git pull`成功，但是合并有冲突，需要手动解决，解决的方法和分支管理中的[解决冲突](http://www.liaoxuefeng.com/wiki/896043488029600/900004111093344)完全一样。解决后，提交，再push：
+这回`git pull`成功，但是合并有冲突，需要手动解决，解决的方法和分支管理中的**解决冲突**完全一样。解决后，提交，再push：
 
 ```bash
 $ git commit -m "fix env conflict"
@@ -2308,7 +2311,7 @@ To github.com:michaelliao/learngit.git
 
 但是在GitHub上，利用Git极其强大的克隆和分支功能，广大人民群众真正可以第一次自由参与各种开源项目了。
 
-如何参与一个开源项目呢？比如人气极高的bootstrap项目，这是一个非常强大的CSS框架，你可以访问它的项目主页https://github.com/twbs/bootstrap，点“Fork”就在自己的账号下克隆了一个bootstrap仓库，然后，从自己的账号下clone：
+如何参与一个开源项目呢？比如人气极高的bootstrap项目，这是一个非常强大的CSS框架，你可以访问它的项目主页https://github.com/twbs/bootstrap ，点“Fork”就在自己的账号下克隆了一个bootstrap仓库，然后，从自己的账号下clone：
 
 ```bash
 git clone git@github.com:michaelliao/bootstrap.git
@@ -2320,7 +2323,7 @@ git clone git@github.com:michaelliao/bootstrap.git
 
 如果你希望bootstrap的官方库能接受你的修改，你就可以在GitHub上发起一个pull request。当然，对方是否接受你的pull request就不一定了。
 
-如果你没能力修改bootstrap，但又想要试一把pull request，那就Fork一下我的仓库：https://github.com/michaelliao/learngit，创建一个`your-github-id.txt`的文本文件，写点自己学习Git的心得，然后推送一个pull request给我，我会视心情而定是否接受。
+如果你没能力修改bootstrap，但又想要试一把pull request，那就Fork一下我的仓库：https://github.com/michaelliao/learngit ，创建一个`your-github-id.txt`的文本文件，写点自己学习Git的心得，然后推送一个pull request给我，我会视心情而定是否接受。
 
 ### 小结
 
@@ -2508,7 +2511,7 @@ $ git ci -m "bala bala bala..."
 
 `--global`参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。
 
-在[撤销修改](https://www.liaoxuefeng.com/wiki/896043488029600/897889638509536)一节中，我们知道，命令`git reset HEAD file`可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个`unstage`别名：
+在**撤销修改**一节中，我们知道，命令`git reset HEAD file`可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个`unstage`别名：
 
 ```bash
 $ git config --global alias.unstage 'reset HEAD'
@@ -2552,7 +2555,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 
 来看看`git lg`的效果：
 
-![git-lg](https://www.liaoxuefeng.com/files/attachments/919059728302912/0)
+![git-lg](https://i.niupic.com/images/2023/12/16/dPKa.png)
 
 为什么不早点告诉我？别激动，咱不是为了多记几个英文单词嘛！
 
@@ -2699,7 +2702,7 @@ Git虽然极其强大，命令繁多，但常用的就那么十来个，掌握�
 
 |PDF版本：[Git Cheat Sheet](https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.pdf)|
 
-现在告诉你Git的官方网站：[http://git-scm.com](http://git-scm.com/)，英文自我感觉不错的童鞋，可以经常去官网看看。
+现在告诉你Git的官方网站：[http://git-scm.com](http://git-scm.com/) ，英文自我感觉不错的童鞋，可以经常去官网看看。
 
 如果你学了Git后，工作效率大增，有更多的空闲时间健身看电影，那我的教学目标就达到了。
 

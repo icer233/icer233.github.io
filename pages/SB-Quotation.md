@@ -350,6 +350,6 @@ permalink: /SB-Quotation/
 |  3   | CZM | 39 |
 |  4   | XJW | 37 |
 |  5  | SZX | 29 |
-|**注：出现次数=先删除上次的榜单再`CTRL+F`进行查找**|||
+**注：出现次数=先删除上次的榜单再`CTRL+F`进行查找**
 
 ![WOW](https://i.niupic.com/images/2023/12/15/dMqc.jpeg)
