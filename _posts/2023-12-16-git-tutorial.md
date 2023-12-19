@@ -4,7 +4,7 @@ layout: post
 title: "Git教程"
 subtitle: "目前世界上最先进的分布式版本控制系统"
 description: "史上最浅显易懂的Git教程！"
-image: https://i.niupic.com/images/2023/12/16/dPsy.jpg
+image: https://icer233.github.io/assets/postimg/git-tutorial/0.jpg
 optimized_image:
 category: code
 tags:
@@ -95,7 +95,7 @@ Linus一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分
 
 先说集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，然后开始干活，干完活了，再把自己的活推送给中央服务器。中央服务器就好比是一个图书馆，你要改一本书，必须先从图书馆借出来，然后回到家自己改，改完了，再放回图书馆。
 
-![1](https://i.niupic.com/images/2023/12/16/dPtN.jpg)
+![1](https://icer233.github.io/assets/postimg/git-tutorial/1.jpg)
 
 集中式版本控制系统最大的毛病就是必须联网才能工作，如果在局域网内还好，带宽够大，速度够快，可如果在互联网上，遇到网速慢的话，可能提交一个10M的文件就需要5分钟，这还不得把人给憋死啊。
 
@@ -105,7 +105,7 @@ Linus一直痛恨的CVS及SVN都是集中式的版本控制系统，而Git是分
 
 在实际使用分布式版本控制系统的时候，其实很少在两人之间的电脑上推送版本库的修改，因为可能你们俩不在一个局域网内，两台电脑互相访问不了，也可能今天你的同事病了，他的电脑压根没有开机。因此，分布式版本控制系统通常也有一台充当“中央服务器”的电脑，但这个服务器的作用仅仅是用来方便“交换”大家的修改，没有它大家也一样干活，只是交换修改不方便而已。
 
-![2](https://i.niupic.com/images/2023/12/16/dPJ6.jpg)
+![2](https://icer233.github.io/assets/postimg/git-tutorial/2.jpg)
 
 当然，Git的优势不单是不必联网这么简单，后面我们还会看到Git极其强大的分支管理，把SVN等远远抛在了后面。
 
@@ -558,7 +558,7 @@ Git和其他版本控制系统如SVN的一个不同之处就是有暂存区的�
 工作区有一个隐藏目录`.git`，这个不算工作区，而是Git的版本库。
 
 Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支`master`，以及指向`master`的一个指针叫`HEAD`。
-![4](https://i.niupic.com/images/2021/10/29/9F7H.jpg)
+![4](https://icer233.github.io/assets/postimg/git-tutorial/4.jpg)
 
 分支和`HEAD`的概念我们以后再讲。
 
@@ -617,7 +617,7 @@ Changes to be committed:
 
 现在，暂存区的状态就变成这样了：
 
-![5](https://i.niupic.com/images/2023/12/16/dPwg.jpg)
+![5](https://icer233.github.io/assets/postimg/git-tutorial/5.jpg)
 
 所以，`git add`命令实际上就是把要提交的所有修改放到暂存区（Stage），然后，执行`git commit`就可以一次性把暂存区的所有修改提交到分支。
 
@@ -638,7 +638,7 @@ nothing to commit, working tree clean
 
 现在版本库变成了这样，暂存区就没有任何内容了：
 
-![6](https://i.niupic.com/images/2023/12/16/dPwr.jpg)
+![6](https://icer233.github.io/assets/postimg/git-tutorial/6.jpg)
 
 ### 小结
 
@@ -971,11 +971,11 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴`id_rsa.pub`文件的内容：
 
-![7](https://i.niupic.com/images/2023/12/16/dPJw.png)
+![7](https://icer233.github.io/assets/postimg/git-tutorial/7.png)
 
 点“Add Key”，你就应该看到已经添加的Key：
 
-![github-addkey-2](https://i.niupic.com/images/2023/12/16/dPJA.png)
+![github-addkey-2](https://icer233.github.io/assets/postimg/git-tutorial/github-addkey-2.png)
 
 为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
 
@@ -997,11 +997,11 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 首先，登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库：
 
-![github-create-repo-1](https://i.niupic.com/images/2023/12/16/dPJF.png)
+![github-create-repo-1](https://icer233.github.io/assets/postimg/git-tutorial/github-create-repo-1.png)
 
 在Repository name填入`learngit`，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：
 
-![github-create-repo-2](https://i.niupic.com/images/2023/12/16/dPJE.png)
+![github-create-repo-2](https://icer233.github.io/assets/postimg/git-tutorial/github-create-repo-2.png)
 
 目前，在GitHub上的这个`learngit`仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
 
@@ -1036,7 +1036,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 推送成功后，可以立刻在GitHub页面中看到远程库的内容已经和本地一模一样：
 
-![github-repo](https://i.niupic.com/images/2023/12/16/dPJJ.png)
+![github-repo](https://icer233.github.io/assets/postimg/git-tutorial/github-repo.png)
 
 从现在起，只要本地作了提交，就可以通过命令：
 
@@ -1106,11 +1106,11 @@ $ git remote rm origin
 
 首先，登陆GitHub，创建一个新的仓库，名字叫`gitskills`：
 
-![github-init-repo](https://i.niupic.com/images/2023/12/16/dPJO.png)
+![github-init-repo](https://icer233.github.io/assets/postimg/git-tutorial/github-init-repo.png)
 
 我们勾选`Initialize this repository with a README`，这样GitHub会自动为我们创建一个`README.md`文件。创建完毕后，可以看到`README.md`文件：
 
-![github-init-repo-2](https://i.niupic.com/images/2023/12/16/dPJN.png)
+![github-init-repo-2](https://icer233.github.io/assets/postimg/git-tutorial/github-init-repo-2.png)
 
 现在，远程库已经准备好了，下一步是用命令`git clone`克隆一个本地库：
 
@@ -1231,7 +1231,7 @@ Switched to branch 'master'
 
 切换回`master`分支后，再查看一个`readme.txt`文件，刚才添加的内容不见了！因为那个提交是在`dev`分支上，而`master`分支此刻的提交点并没有变：
 
-![git-br-on-master](https://i.niupic.com/images/2023/12/16/dPJS.png)
+![git-br-on-master](https://icer233.github.io/assets/postimg/git-tutorial/git-br-on-master.png)
 
 现在，我们把`dev`分支的工作成果合并到`master`分支上：
 
@@ -1355,7 +1355,7 @@ $ git commit -m "& simple"
 ```
 
 现在，`master`分支和`feature1`分支各自都分别有新的提交，变成了这样：
-![11](https://i.niupic.com/images/2023/12/16/dPAo.png)
+![11](https://icer233.github.io/assets/postimg/git-tutorial/11.png)
 
 这种情况下，Git无法执行“快速合并”，只能试图把各自的修改合并起来，但这种合并就可能会有冲突，我们试试看：
 
@@ -1416,7 +1416,7 @@ $ git commit -m "conflict fixed"
 
 现在，`master`分支和`feature1`分支变成了下图所示：
 
-![12](https://i.niupic.com/images/2023/12/16/dPAg.png)
+![12](https://icer233.github.io/assets/postimg/git-tutorial/12.png)
 
 用带参数的`git log`也可以看到分支的合并情况：
 
@@ -1502,7 +1502,7 @@ $ git log --graph --pretty=oneline --abbrev-commit
 
 可以看到，不使用`Fast forward`模式，merge后就像这样：
 
-![git-no-ff-mode](https://i.niupic.com/images/2023/12/16/dPJX.png)
+![git-no-ff-mode](https://icer233.github.io/assets/postimg/git-tutorial/git-no-ff-mode.png)
 
 ### 分支策略
 
@@ -1516,7 +1516,7 @@ $ git log --graph --pretty=oneline --abbrev-commit
 
 所以，团队合作的分支看起来就像这样：
 
-![git-br-policy](https://i.niupic.com/images/2023/12/16/dPJZ.png)
+![git-br-policy](https://icer233.github.io/assets/postimg/git-tutorial/git-br-policy.png)
 
 ### 小结
 
@@ -2555,7 +2555,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 
 来看看`git lg`的效果：
 
-![git-lg](https://i.niupic.com/images/2023/12/16/dPKa.png)
+![git-lg](https://icer233.github.io/assets/postimg/git-tutorial/git-lg.png)
 
 为什么不早点告诉我？别激动，咱不是为了多记几个英文单词嘛！
 
@@ -2700,7 +2700,7 @@ Git虽然极其强大，命令繁多，但常用的就那么十来个，掌握�
 
 友情附赠Git Cheat Sheet，建议打印出来备用：
 
-|PDF版本：[Git Cheat Sheet](https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.pdf)|
+|PDF版本：[Git Cheat Sheet](https://icer233.github.io/assets/resources/git-cheat-sheet.pdf)|
 
 现在告诉你Git的官方网站：[http://git-scm.com](http://git-scm.com/) ，英文自我感觉不错的童鞋，可以经常去官网看看。
 

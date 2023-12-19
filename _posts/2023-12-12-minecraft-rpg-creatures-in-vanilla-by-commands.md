@@ -4,7 +4,7 @@ layout: post
 title: "【命令/数据包】如何制作原版RPG生物/如何间接绕过原版血量上限"
 subtitle: "让你成为一名RPG数据包作者！"
 description: "常用的一些在原版中制作突破原版属性限制的RPG生物的方式，以及一部分以较低代价制作更智能的生物行为的思路"
-image: https://i.niupic.com/images/2023/12/12/dBVl.jpg
+image: https://icer233.github.io/assets/postimg/mc-rpg-vanilla-command/cover.jpg
 optimized_image:
 category: gaming
 tags:
