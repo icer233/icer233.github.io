@@ -121,7 +121,6 @@ echo "category:"
 echo "tags:"
 echo "author:"
 echo "paginate: false"
-echo "math: true"
 echo "---"
 
 }
