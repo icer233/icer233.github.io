@@ -4,7 +4,7 @@ layout: post
 title: "Florr Troll 理论"
 subtitle: "Florr Troll 理论"
 description: "原创的技巧（理论向）"
-image: https://i.niupic.com/images/2023/12/12/dC20.png
+image: https://icer233.github.io/assets/postimg/florr-troll-theory/tack.png
 optimized_image:
 category: gaming
 tags:
