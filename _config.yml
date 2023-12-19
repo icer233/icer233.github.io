@@ -19,6 +19,11 @@ menu:
   - title: "标签"
     url: /tags
 email: tommydai0909@163.com
+# See: https://disqus.com/
+disqus_username: 
+# Contact Form Setting
+# See: https://formspree.io/
+formspree_form_id: 
 
 
 # Social Media Settings
