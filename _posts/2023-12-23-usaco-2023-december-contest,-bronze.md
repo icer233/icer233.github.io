@@ -9,9 +9,11 @@ optimized_image:
 category: code
 tags:
   - "比赛"
+  - "代码"
 author: icer233
 paginate: false
 math: true
+comments: true
 ---
 
 ## Problem 1. Candy Cane Feast
