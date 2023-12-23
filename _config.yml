@@ -20,7 +20,7 @@ menu:
     url: /tags
 email: tommydai0909@163.com
 # See: https://disqus.com/
-geektuts: icer233
+disqus_username: icer233
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: 
