@@ -70,7 +70,7 @@ Github的服务器在国外，国内想访问就得问DNS具体的IP是哪个，
 
 ![host-2](https://icer233.github.io/assets/postimg/connect-to-github/host-2.png)
 
-将GitHub的 ip 地址加入到 C:\Windows\System32\drivers\etc 里面的配置中（关于更改host文件遇到的问题请自行百度）
+将GitHub的 ip 地址加入到 `C:\Windows\System32\drivers\etc` 里面的配置中（关于更改host文件遇到的问题请自行百度）
 
 ![host-3](https://icer233.github.io/assets/postimg/connect-to-github/host-3.png)
 
@@ -97,7 +97,9 @@ Github的服务器在国外，国内想访问就得问DNS具体的IP是哪个，
 ### 3.4 fastgithub
 
 FastGithub是一款Github加速神器，解决github打不开、用户头像无法加载、releases无法上传下载、git-clone、git-pull、git-push失败等问题。
-它支持多种平台：Windows、Linux、MacOS、Docker等
+
+它支持多种平台：`Windows`、`Linux`、`MacOS`、`Docker`等
+
 [Github开源项目地址](https://github.com/dotnetcore/FastGithub)  [下载地址](https://github.com/dotnetcore/FastGithub/releases)
 
 如果此时你的Github访问不了，你可以到 [Gitcode]( https://gitcode.net/) 里面搜索一下，有很多镜像资源。
@@ -108,7 +110,7 @@ FastGithub是一款Github加速神器，解决github打不开、用户头像无�
 
 ### 3.5 开发者边车 Dev Sidecar
 
-dev-sidecar 开发者边车，命名取自service-mesh的service-sidecar，意为为开发者打辅助的边车工具（以下简称ds）。
+`dev-sidecar` 开发者边车，命名取自`service-mesh`的`service-sidecar`，意为为开发者打辅助的边车工具。
 它通过本地代理的方式将https请求代理到一些国内的加速通道上。
 
 [Github开源项目地址](https://github.com/docmirror/dev-sidecar)  [下载地址](https://github.com/docmirror/dev-sidecar/releases)
