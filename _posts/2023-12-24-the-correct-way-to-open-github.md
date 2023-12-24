@@ -20,7 +20,7 @@ GitHub是一个在线软件源代码托管服务平台，使用Git作为版本�
 
 GitHub是一个面向开源和私有软件项目的托管平台。它提供付费和免费账户，允许用户创建公开或私有的代码仓库。GitHub以Git作为唯一的版本库格式进行托管，因此得名GitHub。根据2009年的Git用户调查，GitHub是最流行的Git访问站点，拥有1亿以上的开发人员和400万以上的组织机构。
 
-要了解Github，我们首先要知道Git，Git是管理代码的工具，写代码不是件轻松的事儿，一个人写的时候已经不轻松了，一群人写就更不轻松了，但这世界上很多事都是怎么不轻松怎么来的，大部分人都会和别人一起写代码，问题在于，这么多人写一个东西，你今天写一点，我明天写一点，然后发现你写错了，又影响到了我前天写的，最后汇总的时候怎么查找错误？又在什么时候汇总？这些问题太多了。为了让写代码这件事儿美好一点，我们有了一种名叫代码管理的东西，Git正是其中之一。（更多Git的相关知识见[Git教程 | ICER233'S BLOG](https://icer233.github.io/git-tutorial/)）
+要了解Github，我们首先要知道Git，Git是管理代码的工具，写代码不是件轻松的事儿，一个人写的时候已经不轻松了，一群人写就更不轻松了，但这世界上很多事都是怎么不轻松怎么来的，大部分人都会和别人一起写代码，问题在于，这么多人写一个东西，你今天写一点，我明天写一点，然后发现你写错了，又影响到了我前天写的，最后汇总的时候怎么查找错误？又在什么时候汇总？这些问题太多了。为了让写代码这件事儿美好一点，我们有了一种名叫代码管理的东西，Git正是其中之一。（更多Git的相关知识见[Git教程](https://icer233.github.io/git-tutorial/)）
 
 Git的核心思想是『分布式』，我们在服务器上面有一个『主仓库』，这里放的是拿得出台面的代码，我们也可以在自己的电脑上创建分支，这些分支由『主仓库』克隆而来，然后我们就可以愉快的在自己的电脑上写代码了，写完代码可以同步在自己电脑的分支里面，当你觉得自己的代码拿得出台面，我们可以申请把自己的代码更新到『主仓库』里面，一旦通过这样的审核，我们就对『主仓库』做了某种贡献，世界各地的杰出程序员不断的为一个项目的『主仓库』做贡献，让这个项目变得越来越完善。
 
@@ -58,7 +58,7 @@ Github的服务器在国外，国内想访问就得问DNS具体的IP是哪个，
 
 按照如下步骤加速Github，在打开Github时你会发现已经能打开了
 
-![steampp](csteampp.png)
+![steampp](https://icer233.github.io/assets/postimg/connect-to-github/steampp.png)
 
 ### 3.2 手动更改host文件
 
@@ -80,7 +80,7 @@ Github的服务器在国外，国内想访问就得问DNS具体的IP是哪个，
 
 ### 3.3 steamcommunity 302
 
-本软件是  [羽翼城|Dogfight360](https://www.dogfight360.com/blog/author/wu360463231/) 大佬开发的，本来是用来加速游戏的，但是也可以加速Github
+本软件是  [羽翼城](https://www.dogfight360.com/blog/author/wu360463231/) 大佬开发的，本来是用来加速游戏的，但是也可以加速Github
 
 在[steamcommunity 302](https://www.dogfight360.com/blog/686/)这个帖子中根据提示要求下载解压后，以管理员身份运行
 
@@ -98,10 +98,9 @@ Github的服务器在国外，国内想访问就得问DNS具体的IP是哪个，
 
 FastGithub是一款Github加速神器，解决github打不开、用户头像无法加载、releases无法上传下载、git-clone、git-pull、git-push失败等问题。
 它支持多种平台：Windows、Linux、MacOS、Docker等
-它在Github开源项目地址：https://github.com/dotnetcore/FastGithub
-下载地址：https://github.com/dotnetcore/FastGithub/releases
+[Github开源项目地址](https://github.com/dotnetcore/FastGithub)  [下载地址](https://github.com/dotnetcore/FastGithub/releases)
 
-如果此时你的Github访问不了，你可以到 https://gitcode.net/ 里面搜索一下，有很多镜像资源。
+如果此时你的Github访问不了，你可以到 [Gitcode]( https://gitcode.net/) 里面搜索一下，有很多镜像资源。
 
 以Windows桌面端为例
 解压下载的`fastgithub_win-x64.zip`，找到`FastGithub.UI.exe`，双击运行即可愉快的访问 Github 了。
@@ -112,8 +111,8 @@ FastGithub是一款Github加速神器，解决github打不开、用户头像无�
 dev-sidecar 开发者边车，命名取自service-mesh的service-sidecar，意为为开发者打辅助的边车工具（以下简称ds）。
 它通过本地代理的方式将https请求代理到一些国内的加速通道上。
 
-它在Github开源项目地址：https://github.com/docmirror/dev-sidecar
-下载地址：https://github.com/docmirror/dev-sidecar/releases
+[Github开源项目地址](https://github.com/docmirror/dev-sidecar)  [下载地址](https://github.com/docmirror/dev-sidecar/releases)
+
 如果你现在还打不开Github，可以去[Gitcode]( https://gitcode.net/) 或百度搜索下载
 
 以Windows桌面端为例：
@@ -123,7 +122,7 @@ dev-sidecar 开发者边车，命名取自service-mesh的service-sidecar，意�
 
 ![ds-1](https://icer233.github.io/assets/postimg/connect-to-github/ds-1.png)
 
-![ds-2](https://icer233.github.io/assets/postimg/connect-to-github/ds-2.png)
+![ds-3](https://icer233.github.io/assets/postimg/connect-to-github/ds-3.png)
 
 另外，该软件，还支持`npm`、`git`、`pip`加速。
 
@@ -156,3 +155,9 @@ dev-sidecar 开发者边车，命名取自service-mesh的service-sidecar，意�
 **综合**
 
 [GitHub 可用网站 - 最优网址 (aalib.net)](https://c.aalib.net/tool/github/)
+
+## 4 结语
+
+我们麻瓜能在国内流畅访问 Github的方法就都在这里了，这可以说是全网最全面的方法了
+
+当然，魔法师除外！
