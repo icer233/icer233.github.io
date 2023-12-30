@@ -220,7 +220,7 @@ tea
 以上就是正则表达式的基础语法, 更多详见[这里](https://www.codejiaonang.com/#/course/regex_chapter1/0/0)
 
 ## 2.5 不错的教程视频
+<iframe src="//player.bilibili.com/player.html?aid=670394789&bvid=BV1da4y1p7iZ&cid=260601529&p=1&autoplay=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
 
-<iframe src="//player.bilibili.com/player.html?aid=670394789&bvid=BV1da4y1p7iZ&cid=260601529&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<iframe src="//player.bilibili.com/player.html?aid=625512607&bvid=BV19t4y1y7qP&cid=187302262&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=625512607&bvid=BV19t4y1y7qP&cid=187302262&p=1&autoplay=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
