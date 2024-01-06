@@ -14,6 +14,8 @@ menu:
     url: /
   - title: "SB语录"
     url: /SB-Quotation
+  - title: "数学工具"
+    url: /Math-Tools
   - title: "留言"
     url: /contact
   - title: "标签"
