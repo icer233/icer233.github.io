@@ -6,7 +6,7 @@ subtitle: "论如何安全地摸鱼"
 description: "切屏老是被发现怎么办？？"
 image: https://icer233.github.io/assets/postimg/dktp-swt-tip/tip1cov.png
 optimized_image:
-category: gaming
+category: skills
 tags:
    - "技巧"
 author: icer233
