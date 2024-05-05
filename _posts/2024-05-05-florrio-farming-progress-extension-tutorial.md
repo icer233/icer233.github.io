@@ -24,6 +24,12 @@ paginate: false
 
 重要的事情说三遍。
 
+**快去v50给Bravo**
+
+**快去v50给Bravo**
+
+**快去v50给Bravo**
+
 ## 下载&安装
 
 1. 安装TamperMonkey浏览器插件（自己在浏览器的插件商店中搜索或百度安装教程）
@@ -56,7 +62,7 @@ paginate: false
 
 ![](https://icer233.github.io/assets/postimg/florrioframingprogressextensiontutorial/7.png)
 
-6. 接下来会问你各个级别Basic的数量，**根据自己的实际情况回答**，每回答完一个就点击确定（又可能点击确定会卡，多点几下即可）
+6. 接下来会问你各个级别Basic的数量，**根据自己的实际情况回答**，每回答完一个就点击确定（有可能点击确定会卡，多点几下即可）
 
 ![](https://icer233.github.io/assets/postimg/florrioframingprogressextensiontutorial/8.png)
 
