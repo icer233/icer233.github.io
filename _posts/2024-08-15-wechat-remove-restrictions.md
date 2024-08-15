@@ -19,7 +19,7 @@ paginate: false
 
 ## 原帖
 
-[微信逆向之自己动手去除微信多开限制，小白也能看懂 - 『软件调试区』 - 吾爱破解 - LCG - LSG |安卓破解|病毒分析|www.52pojie.cn](https://www.52pojie.cn/thread-1951224-1-1.html)
+[微信逆向之自己动手去除微信多开限制，小白也能看懂](https://www.52pojie.cn/thread-1951224-1-1.html)
 
 ## 前言
 
