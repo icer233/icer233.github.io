@@ -23,13 +23,13 @@ pre {
 
   span {
     line-height: 1.5rem;
-    font-family: "Monaco", "Consolas", "Menlo", monospace;
+    font-family: "Monaco", "Consolas", "Menlo", "Monospace";
   }
 }
 
 .highlight {
   margin: rem(20px) 0;
-
+  display: inline-block;
   @include media(">=sm") {
     word-wrap: break-word;
     margin: rem(29px) 0;
