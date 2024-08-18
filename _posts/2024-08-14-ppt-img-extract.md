@@ -1,5 +1,5 @@
 ---
-date: 2024-08-16 07:30:11
+date: 2024-08-14 07:30:11
 layout: post
 title: "PPT图片提取技巧"
 subtitle: "炒鸡简单!!"
@@ -10,7 +10,7 @@ category: skills
 tags:
   - "PPT"
   - "技巧"
-author: icer233
+author: ggbond
 paginate: false
 ---
 
