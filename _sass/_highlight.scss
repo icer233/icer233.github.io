@@ -30,9 +30,6 @@ pre {
 .highlight {
   margin: rem(20px) 0;
 
-  border-radius: 15px;
-  width: 900px;
-
   @include media(">=sm") {
     word-wrap: break-word;
     margin: rem(29px) 0;
