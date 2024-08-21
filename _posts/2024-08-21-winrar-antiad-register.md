@@ -61,7 +61,7 @@ Resource Tuner操作方法与Resource Hacker类似，不做演示。
 
 点击删除 -> 接着点击下面的“另存”，文件名为`setup.sfx` ，点击“保存”，即可得到 `setup.sfx `文件
 
-![photo](https://icer233.github.io/assets/postimg/2024/08/21/6.png)
+![photo](https://icer233.github.io/assets/postimg/2024/08/21/6.gif)
 
 ## 五、提取WinRAR图标文件
 
