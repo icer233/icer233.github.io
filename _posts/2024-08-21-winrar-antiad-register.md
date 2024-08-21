@@ -1,5 +1,5 @@
 ---
-date: 2024-08-21 12:53:55
+date: 2024-08-21 5:53:55
 layout: post
 title: "WinRAR去广告已注册版打包方法及相关教程工具"
 subtitle: "亲手破解老牌压缩软件WinRAR"
@@ -10,6 +10,7 @@ category: code
 tags: 
   - "破解"
   - "压缩"
+  - "逆向"
 author: ggbond
 paginate: false
 ---

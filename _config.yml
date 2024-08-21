@@ -14,10 +14,10 @@ menu:
     url: /
   - title: "SB语录"
     url: /SB-Quotation
-  - title: "留言"
-    url: /contact
   - title: "标签"
     url: /tags
+  - title: "留言"
+    url: /contact
 email: tommydai0909@163.com
 # See: https://disqus.com/
 disqus_username: icer233
