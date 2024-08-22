@@ -121,6 +121,7 @@ echo "category:"
 echo "tags:"
 echo "author:"
 echo "paginate: false"
+echo "music-id: "
 echo "---"
 
 }
