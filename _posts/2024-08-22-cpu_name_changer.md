@@ -9,9 +9,9 @@ optimized_image:
 category: code
 tags:
   - "批处理"
+  - "技巧"
 author: icer233
 paginate: false
-music-id: 1834078061
 ---
 
 ## 前言

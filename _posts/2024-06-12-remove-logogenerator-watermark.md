@@ -9,6 +9,7 @@ optimized_image:
 category: code
 tags: 
   - "去水印"
+  - "技巧"
 author: ggbond
 paginate: false
 music-id: 
