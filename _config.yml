@@ -20,11 +20,16 @@ menu:
     url: /contact
 email: tommydai0909@163.com
 # See: https://disqus.com/
-disqus_username: icer233
+disqus_username: 
 # Contact Form Setting
 # See: https://formspree.io/
 formspree_form_id: 
 
+# Gitalk settings
+comment_gitalk_clientId: Iv23li2ED3huDpCon69A
+comment_gitalk_clientSecret: 57c6286beaa2e184960f51adf452870d1aaa074a
+comment_gitalk_repo: icer233.github.io
+github_username: icer233
 
 # Social Media Settings
 # Remove the item if you don't need it
