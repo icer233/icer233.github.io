@@ -17,7 +17,7 @@
     }
     function i(e) {
         var a = t.createElement("img");
-        a.src = "https://icer233.github.io/src/img/gyf.png"; 
+        a.src = "https://icer233.github.io/assets/img/gyf.png"; 
         a.className = "image",
         d.push({
             el: a,
