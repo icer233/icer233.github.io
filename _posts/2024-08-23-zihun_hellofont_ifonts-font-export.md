@@ -4,7 +4,7 @@ layout: post
 title: "【字魂/iFonts/字由】字体导出"
 subtitle: "【字魂/iFonts/字由】字体导出"
 description: "【字魂/iFonts/字由】字体导出"
-image:
+image: https://icer233.github.io/assets/postimg/2024/08/23/1-1.png
 optimized_image:
 category: skills
 tags:
@@ -15,7 +15,7 @@ paginate: false
 ---
 
 ## 原帖
-|[字魂字体文件导出](https://www.52pojie.cn/thread-1840626-1-1.html)|[字由字体导出](https://www.52pojie.cn/thread-1841495-1-1.html)|[iFonts字体导出](https://www.52pojie.cn/thread-1845363-1-1.html)|
+| [字魂字体文件导出](https://www.52pojie.cn/thread-1840626-1-1.html) | [字由字体导出](https://www.52pojie.cn/thread-1841495-1-1.html) | [iFonts字体导出](https://www.52pojie.cn/thread-1845363-1-1.html) |
 
 ## 前言
 
