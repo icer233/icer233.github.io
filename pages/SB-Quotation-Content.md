@@ -4,7 +4,7 @@ menu: false
 date: '2023-02-27 01:53:59'
 title: SB-Quotation
 description: Some description.
-permalink: /SB-Quotation/
+permalink: /SB-Quotation-Content/
 ---
 
 # SB语录

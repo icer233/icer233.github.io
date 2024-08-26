@@ -14,7 +14,6 @@ menu:
     url: /
   - title: "SB语录"
     url: /pages/SB-Quotation.html
-  - url: /SB-Quotation-Content
   - title: "标签"
     url: /tags
   - title: "留言"
