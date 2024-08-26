@@ -13,7 +13,7 @@ menu:
   - title: "主页"
     url: /
   - title: "SB语录"
-    url: /SB-Quotation.html
+    url: /pages/SB-Quotation.html
   - title: "标签"
     url: /tags
   - title: "留言"
