@@ -130,6 +130,7 @@ data = requests.get(url=down_url, headers=headers, timeout=180).content
 我们直接在解析文件下载链接之前套一个**简陋的**`if`判断是否已经下载
 
 ```python
+import os
 if not os.path.exists(ans_path):
         # 获取文件下载链接
         detail_text = requests.get(url=detail_url, headers=headers, timeout=300).text
@@ -140,7 +141,7 @@ if not os.path.exists(ans_path):
         with open(ans_path, 'wb') as fp:
             fp.write(data)
             print(name, '下载成功')
-    else:
+else:
         print(name, '已存在')
 
 ```
@@ -150,7 +151,6 @@ if not os.path.exists(ans_path):
 我们用多线程来下载, 先将我们的下载代码封装成一个函数
 
 ```python
-import os
 def down(li):
     detail_url = li.xpath('./div[@class="title"]/a/@href')[0] # 获取详情页链接
     name = li.xpath('./div[@class="title"]/a/text()')[0]  # 获取文件名
@@ -192,7 +192,7 @@ IndexError: list index out of range
 
 并且指向了这一行代码:
 
-```
+```python
 down_url = re.findall('(http://files\.eduuu\.com/ohr/.*?\.rar)', detail_text, re.S)[0]
 ```
 
@@ -215,7 +215,7 @@ down_url = re.findall('(http://files\.eduuu\.com/ohr/.*?\.rar)|(http://files\.ed
 ```python
 if down_url[0]:
             down_url = down_url[0]
-        else:
+else:
             down_url = down_url[1]
 ```
 

@@ -69,7 +69,7 @@ $$
 
 
 $$
-\int_0^r\cfrac{\textrm{d}r}{\sqrt{\sin^2\phi_0-\alpha^2r^2}}=\int_0^x\cfrac{x}{\cos\phi_0}
+\int_0^r\cfrac{\textrm{d}r}{\sqrt{\sin^2\phi_0-\alpha^2r^2}}=\int_0^x\cfrac{\textrm{d}x}{\cos\phi_0}
 $$
 
 
