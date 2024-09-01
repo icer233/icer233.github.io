@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 .then(data => {
                     var parser = new DOMParser();
                     var doc = parser.parseFromString(data, 'text/html');
-                    var postContent = doc.querySelector('.post').innerHTML;
-                    content.innerHTML = postContent;
+                    //var postContent = doc.querySelector('.post').innerHTML;
+                    content.innerHTML = data;
                     content.style.display = "block";
                     form.style.display = "none";
 
