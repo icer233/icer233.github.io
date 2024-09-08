@@ -116,9 +116,9 @@ $$
 
 设透明介质的自上而下的三层介质的折射率依次为 $n_1,n_2,n_3$ ，则上下表面的反射光之间的附加光程差按照如下规律判定。
 
-当 $n_1\textgreater n_2\textgreater n_3$ 或 $n_1\textless n_2\textless n_3$ 时，没有附加的光程差。
+当 $n_1> n_2> n_3$ 或 $n_1<n_2< n_3$ 时，没有附加的光程差。
 
-当 $n_1\textless n_2 \textgreater n_3$ 或 $n_1\textgreater n_2\textless n_3$ 时，具有 $\cfrac{\lambda}{2}$ 的附加光程差。
+当 $n_1<n_2 $$>n_3$ 或 $n_1>n_2<n_3$ 时，具有 $\cfrac{\lambda}{2}$ 的附加光程差。
 
 ### 5. 薄膜干涉
 
@@ -132,7 +132,7 @@ $$
 $$
 
 
-其中 $\delta'$ 为可能存在的附加的 $\cfrac{\lambda}{2}$ 的光程差，即 
+其中 $\delta'$ 为可能存在的附加的 $\dfrac{\lambda}{2}$ 的光程差，即 
 
 
 $$
