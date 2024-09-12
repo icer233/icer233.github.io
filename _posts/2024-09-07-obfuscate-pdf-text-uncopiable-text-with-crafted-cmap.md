@@ -9,6 +9,7 @@ optimized_image:
 category: skills
 tags:
   - "技巧"
+  - "PDF"
 author: icer233
 paginate: false
 ---
