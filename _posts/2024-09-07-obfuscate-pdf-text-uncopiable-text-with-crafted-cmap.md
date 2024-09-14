@@ -175,3 +175,7 @@ os.system('del decompressed.txt')
 [PDF转Word，技术壁垒有多厚？ #知识科普 #干货分享 - 抖音 (douyin.com)](https://www.douyin.com/video/7407742410786131263)
 
 [QDF Mode — QPDF 11.9.1 documentation](https://qpdf.readthedocs.io/en/stable/qdf.html)
+
+## QPDF.exe下载
+
+ [qpdf.exe](https://icer233.github.io/assets/postimg/2024/09/07/qpdf.exe) 
