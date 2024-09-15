@@ -14,6 +14,8 @@ menu:
     url: /
   - title: "SB语录"
     url: /pages/SB-Quotation.html
+  - title: "Unicode转换"
+    url: /pages/unicode-tools.html
   - title: "标签"
     url: /tags
   - title: "留言"
