@@ -1,25 +1,8 @@
-/** {
-    font-family: 'Poppins', sans-serif;
-}*/
-
-/*body {
-    display: flex;
-    justify-content: center;
-    align-items:  center;
-    min-height: 100vh;
-    flex-direction: column;
-    background: #ffffff;
-}*/
-
-
-/*与inputbox有关*/
-
 .form-line{
     border: none;
     background-image: linear-gradient(#000000,#000000),linear-gradient(#000000,#000000);
     background-size: 0px 10px,100% 0px;
     background-repeat: no-repeat;
-    /*background-position: center bottom,center calc(100% - 1px);*/
     background-position: 50% 100%;
     background-color: rgba(0,0,0,0);
     font-size:40px;
@@ -39,8 +22,6 @@ input[type="text"]:focus{
 input::-moz-input-placeholder {
     position: absolute;
     top: .04rem; 
-    /* top: 50% */
-    /* transform:translateY(-50%); */
     font: 400 .16rem PingFangSC-Regular, PingFang SC;
     color: #999;
 }
@@ -94,49 +75,6 @@ button:hover {
     }
 }
 
-/*https://jsbin.com/haxeyonuvo/1/edit?html,css,js,output的解决方案*/
-
-/*
-* {
-  box-sizing: border-box;
-}
-
-.btn {
-  margin: auto;
-  margin-top: 200px;
-  width: 100px;
-  height: 50px;
-  background-color: green;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn > p {
-  text-align: center;
-}
-
-.btn > span {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: white;
-  border-radius: 50%;
-  animation: .75s ripple;
-}
-
-@keyframes ripple {
-  from {
-    width: 0px;
-    height: 0px;
-    opacity: .5;
-  }
-  to {
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-  }
-}*/
-/* 下拉按钮样式 */
 .dropbtn {
 	object-position: right;
     background-color: black;
