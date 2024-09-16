@@ -1,10 +1,10 @@
 ---
 date: 2024-09-16 06:31:49
 layout: post
-title: "两个工具帮你一出PDF的限制！"
+title: "两个工具帮你移除PDF的限制！"
 subtitle: "吾爱大佬出手，让你不再被从网上下载的pdf限制多多而苦恼！"
 description: "吾爱大佬出手，让你不再被从网上下载的pdf限制多多而苦恼！"
-image: https://icer233.github.io/assets/postimg/2024/09/16/5.png
+image: https://icer233.github.io/assets/postimg/2024/09/16/5.jpg
 optimized_image:
 category: efficiency
 tags:
@@ -70,7 +70,7 @@ math: false
 1、进入控制台窗口（按Win-r，输入cmd，确定）。如果PDFCommander.exe在D盘，就输入D:回车，然后输入 cd PDFCommander.exe文件所在的目录，回车。
 2、把pdf文件拷贝到PDFCommander.exe文件所在的目录中，然后输入 PDFCommander -f 你的文件.pdf -v ，查看pdf文件的contents和Tj信息，分析水印。更多命令看压缩包中的说明。
 
-![](https://icer233.github.io/assets/postimg/2024/09/16/4.png)
+![](https://icer233.github.io/assets/postimg/2024/09/16/4.jpg)
 
 **新增去除数字签名功能。新增裁剪框去除水印功能。删除-b参数（统一用-t）。-r参数支持多文本。**
 这个版本直接操作PDF流，对PDF无损。速度非常快。支持Windows7及以上操作系统。
@@ -86,7 +86,7 @@ math: false
 
 **参考效果**
 
-![](https://icer233.github.io/assets/postimg/2024/09/16/5.png)
+![](https://icer233.github.io/assets/postimg/2024/09/16/5.jpg)
 
 顺便说一下，本软件不提供UI界面，原因是写UI代码时间太长，电费太贵。
 
