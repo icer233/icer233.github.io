@@ -6,7 +6,7 @@ subtitle: "去除恶心的付费限制！"
 description: "去除恶心的付费限制！"
 image: https://icer233.github.io/assets/postimg/2024/09/11/1.png
 optimized_image:
-category: skills
+category: efficiency
 tags:
   - "工具"
   - "PDF"

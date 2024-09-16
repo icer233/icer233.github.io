@@ -6,7 +6,7 @@ subtitle: "炒鸡简单!!"
 description: "两个方法快速提取PPT中的图片"
 image: https://icer233.github.io/assets/postimg/ppt-img-extract/4.png
 optimized_image:
-category: skills
+category: efficiency
 tags:
   - "PPT"
   - "技巧"

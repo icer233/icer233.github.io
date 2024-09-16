@@ -6,7 +6,7 @@ subtitle: "【字魂/iFonts/字由】字体导出"
 description: "【字魂/iFonts/字由】字体导出"
 image: https://icer233.github.io/assets/postimg/2024/08/23/1-1.png
 optimized_image:
-category: skills
+category: efficiency
 tags:
   - "字体"
   - "破解"
