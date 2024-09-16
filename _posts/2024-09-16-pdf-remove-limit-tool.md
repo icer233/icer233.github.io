@@ -2,8 +2,8 @@
 date: 2024-09-16 06:31:49
 layout: post
 title: "两个工具帮你移除PDF的限制！"
-subtitle: "吾爱大佬出手，让你不再被从网上下载的pdf限制多多而苦恼！"
-description: "吾爱大佬出手，让你不再被从网上下载的pdf限制多多而苦恼！"
+subtitle: "吾爱大佬出手，让你不再为从网上下载的pdf限制多多而苦恼！"
+description: "吾爱大佬出手，让你不再为了从网上下载的pdf限制多多而苦恼！"
 image: https://icer233.github.io/assets/postimg/2024/09/16/5.jpg
 optimized_image:
 category: efficiency
