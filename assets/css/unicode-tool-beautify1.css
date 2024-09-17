@@ -31,6 +31,7 @@ body {
     transition: background-size 0.3s;
     /* 平滑过渡效果 */
     top: 50px;
+    color: #f9f9f9;
 }
 
 input[type="text"]:focus {
@@ -40,6 +41,7 @@ input[type="text"]:focus {
     outline: none;
     font-size: 20px;
     width: 80%;
+    color: #f9f9f9;
 }
 
 input::placeholder {
@@ -113,7 +115,9 @@ button:hover {
 .dropdown:hover .dropdown-content {
     display: inline-block;
 }
-
+.dropdown:click .dropdown-content {
+    display: inline-block;
+}
 .dropdown:hover .dropbtn {
     background-color: #ffffff;
     color: #FF0A16;
@@ -121,7 +125,7 @@ button:hover {
 
 /* 段落样式 */
 p {
-    color: #333;
+    color: #d8d4d4;
     font-size: 20px;
     margin-top: 10px;
 }

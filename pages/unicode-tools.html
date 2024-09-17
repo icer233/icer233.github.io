@@ -160,6 +160,7 @@
                 <a onclick="add200F()"> \u200F</a>
                 <a onclick="addFEFF()"> \uFEFF</a>
                 <a onclick="add2067()"> \u2067</a>
+                <a onclick="add202d()"> \u202D</a>
             </div>
         </div>
         <p id="stringText"></p>
@@ -278,8 +279,12 @@
             var m = document.getElementById("UnicodeInput").value;//获取输入框的值
             document.getElementById("UnicodeInput").value = m + '\\u2067';
         }
+        function add202d() {
+            var m = document.getElementById("UnicodeInput").value;//获取输入框的值
+            document.getElementById("UnicodeInput").value = m + '\\u202d';
+        }
         function encode() {
-            const str = "\u200e\u200f\u200c\u200d\ufeff";
+            const str = "\u200e\u200f\u200c\u200d\ufeff"
             var vis = document.getElementById("visibleInput").value;
             var hid = document.getElementById("hidenInput").value;
             var result = ""
@@ -303,18 +308,33 @@
             var vis = "";
             for (var i = 0; i < str.length; i++) {
                 if (str[i] == '\u200b' || str[i] == '\u200c' || str[i] == '\u200d' || str[i] == '\u200e' || str[i] == '\u200f' || str[i] == '\ufeff') {
-                    hid += str[i];
+                    hid = hid + str[i];
                 } else {
-                    vis += str[i];
+                    vis = vis + str[i];
                 }
             }
             var letters = hid.split('\u200b');
+            // console.log(letters);
             for (var i = 0; i < letters.length; i++) {
                 var charCode = 0;
                 for (var j = 0; j < letters[i].length; j++) {
-                    charCode = charCode * 5 + "01234".indexOf(letters[i][j]);
+                    if (letters[i][j] == '\u200e') {
+                        charCode = charCode * 5 + 0;
+                    }
+                    if (letters[i][j] == '\u200f') {
+                        charCode = charCode * 5 + 1;
+                    }
+                    if (letters[i][j] == '\u200c') {
+                        charCode = charCode * 5 + 2;
+                    }
+                    if (letters[i][j] == '\u200d') {
+                        charCode = charCode * 5 + 3;
+                    }
+                    if (letters[i][j] == '\ufeff') {
+                        charCode = charCode * 5 + 4;
+                    }
                 }
-                hid += String.fromCharCode(charCode);
+                hid = hid + String.fromCharCode(charCode);
             }
             document.getElementById("visibleText").innerHTML = vis;
             document.getElementById("hidenText").innerHTML = hid;
