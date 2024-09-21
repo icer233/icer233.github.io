@@ -4,10 +4,13 @@ layout: post
 title: "柏林噪声—将黑白像素变成山河湖泊"
 subtitle: "通俗地了解游戏中的随机地形是怎么生成的"
 description: "通俗地了解游戏中的随机地形是怎么生成的"
-image:
+image: https://icer233.github.io/assets/postimg/2024/09/21/12.png
 optimized_image:
 category: skills
 tags:
+  - "游戏"
+  - "科普"
+  - "算法"
 author: icer233
 paginate: false
 math: true
@@ -41,10 +44,15 @@ math: true
 
 
 $$
-w_1 =\cfrac{a(16-x)+bx}{16}\\
+w_1 =\cfrac{a(16-x)+bx}{16}
+$$
 
+
+$$
 w_2 =\cfrac{d(16-x)+cx}{16}
 $$
+
+
 ![](https://icer233.github.io/assets/postimg/2024/09/21/3.png)
 
 然后我们用一样的算法算出 $w$
@@ -99,10 +107,22 @@ $$
 
 
 $$
-a=\vec{a}\cdot\vec{a'}\\
-b=\vec{b}\cdot\vec{b'}\\
-c=\vec{c}\cdot\vec{c'}\\
-d=\vec{d}\cdot\vec{d'}\\
+a=\vec{a}\cdot\vec{a'}
+$$
+
+
+$$
+b=\vec{b}\cdot\vec{b'}
+$$
+
+
+$$
+c=\vec{c}\cdot\vec{c'}
+$$
+
+
+$$
+d=\vec{d}\cdot\vec{d'}
 $$
 
 
@@ -150,3 +170,8 @@ $$
 
 你升职可以生成三维噪声, 只要给每个立体区块的8个顶点都赋予梯度向量, 类比之前计算出每个像素块的值
 
+## 参考
+
+https://www.bilibili.com/video/BV1vx4y1i7gn/
+
+https://www.bilibili.com/video/BV1Hh411s7ir/
