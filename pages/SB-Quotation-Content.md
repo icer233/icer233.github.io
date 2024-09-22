@@ -533,6 +533,26 @@ permalink: /SB-Quotation-Content/
 | 515 | 你们俩合起来玩我 | TYL | XS | CZM&OSH |
 | 516 | LYX你喜欢八班哪个人？ | MJN | XS | LYX |
 | 517 | SJF！ | LYX | XS | |
+|   518   |     XJW看了谁（指CZM）然后微微笑了一下     |   PX    |  HXLS  |                 |
+|   519   |                TYL仰天长啸                 |   PX    |  HXLS  |                 |
+|   520   |               奶奶的我不射了               |   TYL   |   XS   |                 |
+|   521   |                LY把棍子吃了                |   WLP   |  YWLS  |                 |
+|   522   |                你每天搞基吗                |   LL    |  YYLS  |       LY        |
+|   523   |                我现在不想硬                |   TYL   |   XS   |                 |
+|   524   |            YZY被你点了xiao穴吗             |   PX    |  HXLS  |                 |
+|   525   |            我比较喜欢她（CZM）             |   XJW   |   XS   |                 |
+|   526   |        六年级后面二十几个男生都立着        |   YXG   |  TYLS  |                 |
+|   527   |                 吃了你的醋                 |   XJW   |   XS   |       PX        |
+|   528   |                 包皮吃苹果                 |   LZY   |   XS   |                 |
+|   529   |            我知道你们根本忍不住            |   PX    |  HXLS  | OSH&YLH&ZZX&WZX |
+|   530   |               我要把你焯十遍               |   TYL   |   XS   |       OSH       |
+|   531   |                  插完插我                  |   SZX   |   XS   |       ZZX       |
+|   532   |     想看我羞答答样子的人私信我，喵呜~      |   SJW   |   XS   |                 |
+|   533   |         （CZM）披头散发，准备开干          |   XJW   |   XS   |       OSH       |
+|   534   |                OSH屁股好翘                 |   XJW   |   XS   |                 |
+|   535   |                我就喜欢扣bi                |   SJW   |   XS   |                 |
+|   536   |                 我要接着扣                 |   SJW   |   XS   |                 |
+|   537   |               我是扣bi lover               |   SJW   |   XS   |                 |
 
 
 >ε=ε=ε=┏(゜ロ゜;)┛
@@ -541,19 +561,19 @@ permalink: /SB-Quotation-Content/
 
 
 | 排名 | 名字 | 次数 |
-| :--: | :----------: | :--: |
-|  1   | TYL | 116 |
-|  2   | ZZX | 99 |
-|  3   | CZM | 78 |
-|  4   | XJW | 62 |
-|  5   | OSH  |  51  |
+| :--: | :--: | :--: |
+|  1   | TYL  | 121  |
+|  2   | ZZX  | 101  |
+|  3   | CZM  |  81  |
+|  4   | XJW  |  67  |
+|  5   | OSH  |  55  |
 
 
 
 **注：出现次数=先删除上次的榜单再`CTRL+F`进行查找**
 
 
-
+![CPS](https://icer233.github.io/assets/resources/2CP.png)
 ![WOW](https://icer233.github.io/assets/resources/wow.jpeg)
 
 ![20240721](https://icer233.github.io/assets/resources/20240721.jpeg)
