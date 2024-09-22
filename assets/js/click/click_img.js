@@ -1,6 +1,6 @@
 !function(e, t, a) {
     function n() {
-        c(".image{width: 30px;height: 30px;position: fixed;filter: drop-shadow(0 0 10px);}.image:after,.image:before{content: '';position: fixed;}"),
+        c(".image{width: 80px;height: 80px;position: fixed;filter: drop-shadow(0 0 10px);}.image:after,.image:before{content: '';position: fixed;}"),
         o(),
         r()
     }

@@ -13,7 +13,8 @@ menu:
   - title: "主页"
     url: /
   - title: "SB语录"
-    url: /pages/SB-Quotation.html
+    url: /SB-Quotation-Content
+    # /pages/SB-Quotation.html
   - title: "Unicode转换"
     url: /pages/unicode-tools.html
   - title: "标签"

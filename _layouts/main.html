@@ -4,25 +4,32 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ site.language }}" class="no-js">
-    {% include head.html %}
-    <body class="main-page has-push-menu">
-        {% include svg-icons.html %}
-        {% include header.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include footer.html %}
-        <script>
-            if (window.netlifyIdentity) {
-                window.netlifyIdentity.on("init", function(user) {
-                    if (!user) {
-                        window.netlifyIdentity.on("login", function() {
-                            document.location.href = "/admin/";
-                        });
-                    }
-                });
-            }
-        </script>
-    </body>
-</html>
+{% include head.html %}
 
+<body class="main-page has-push-menu">
+    {% include svg-icons.html %}
+    {% include header.html %}
+    <section class="content">
+        {{ content }}
+    </section>
+    {% include footer.html %}
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", function (user) {
+                if (!user) {
+                    window.netlifyIdentity.on("login", function () {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+    <!--鼠标点击出现大爆炸-->
+    <script type="text/javascript" src="/assets/js/click/big_fireworks.js"></script>
+    <script type="text/javascript" src="/assets/js/click/anime.min.js"></script>
+
+    <!--鼠标彩色拖尾-->
+    <script type="text/javascript" src="/assets/js/click/mouse-trail.js"></script>
+</body>
+
+</html>
