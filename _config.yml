@@ -16,7 +16,9 @@ menu:
     url: /SB-Quotation-Content
     # /pages/SB-Quotation.html
   - title: "Unicode转换"
-    url: /pages/unicode-tools.html
+    url: /unicode-tools
+  - title: "音乐解锁"
+    url: /music-unlock
   - title: "标签"
     url: /tags
   - title: "留言"
