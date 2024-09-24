@@ -4,14 +4,42 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ site.language }}" class="no-js">
-    {% include head.html %}
-    <body class="has-push-menu">
-        {% include svg-icons.html %}
-        {% include header.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include footer.html %}
-    </body>
-</html>
+{% include head.html %}
+<link rel="stylesheet" href="/assets/css/loader.css">
 
+<body class="has-push-menu">
+    <script>
+        window.addEventListener('load', function () {
+            var loadingScreen = document.getElementById('loading-box');
+            loadingScreen.style.display = 'none';
+        });
+    </script>
+    <!--加载动画 start-->
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="loading-word">
+                <p class="loading-title" id="loading-title">ICER233's BLOG</p>
+                <span id="loading-text">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <!--加载动画 end-->
+    {% include svg-icons.html %}
+    {% include header.html %}
+    <section class="content">
+        {{ content }}
+    </section>
+    {% include footer.html %}
+</body>
+
+</html>
