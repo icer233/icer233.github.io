@@ -11,11 +11,20 @@ layout: compress
     <script>
         window.addEventListener('load', function () {
             var loadingScreen = document.getElementById('loading-box');
+            var closeButton = document.getElementById('close-loading');
             loadingScreen.style.display = 'none';
+            closeButton.style.display = 'block'; // 确保按钮在页面加载后可见
         });
+
+        // 添加关闭加载动画的函数
+        function closeLoading() {
+            var loadingScreen = document.getElementById('loading-box');
+            loadingScreen.style.display = 'none';
+        }
     </script>
     <!--加载动画 start-->
     <div id="loading-box">
+        <button onclick="closeLoading()">关闭</button>
         <div class="loading-left-bg"></div>
         <div class="loading-right-bg"></div>
         <div class="spinner-box">
@@ -33,7 +42,6 @@ layout: compress
             </div>
         </div>
     </div>
-    <!--加载动画 end-->
     {% include svg-icons.html %}
     {% include header.html %}
     <section class="content">

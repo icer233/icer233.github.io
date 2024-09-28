@@ -1,7 +1,7 @@
 #loading-box .loading-left-bg,
 #loading-box .loading-right-bg {
     position: fixed;
-    z-index: 999998;
+    z-index: 999997;
     width: 50%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.644);
@@ -157,4 +157,31 @@ div.loaded div.spinner-box {
     100% {
         transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
     }
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid #FF0A16;
+    color: #ffffff;
+    background-color: #0000007c;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 40px;
+    margin: 0 10px;
+    position: fixed;
+    /* 固定定位 */
+    top: 20px;
+    /* 距离顶部的距离 */
+    right: 20px;
+    /* 距离右侧的距离 */
+    transition: background-color 0.3s, color 0.3s;
+    /* 过渡效果 */
+    z-index: 9999999;
+    /* 确保按钮在最上层 */
+    
+}
+
+button:hover {
+    background-color: #FF0A16;
+    color: #ffffff;
 }
