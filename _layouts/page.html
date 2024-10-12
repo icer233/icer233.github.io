@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
-
+<script>
+  window.addEventListener('load', function () {
+    var loadingScreen = document.getElementById('loading-box');
+    var closeButton = document.getElementById('close-loading');
+    loadingScreen.style.display = 'none';
+    closeButton.style.display = 'block';
+  });
+  function closeLoading() {
+    var loadingScreen = document.getElementById('loading-box');
+    loadingScreen.style.display = 'none';
+  }
+</script>
 <div class="post">
 
   <article class="post-content fullwidth">
