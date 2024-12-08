@@ -2,8 +2,8 @@
 date: 2024-11-09 13:23:01
 layout: post
 title: "2024 初中古诗文大赛初赛线上答题网页问题剖析"
-subtitle: "带你领略屎的风光!"
-description: "带你领略屎的风光!"
+subtitle: "组委会技术有待提高"
+description: ""
 image: https://icer233.github.io/assets/postimg/2024/11/09/1.png
 optimized_image:
 category: skills
