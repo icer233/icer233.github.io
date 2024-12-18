@@ -12,13 +12,19 @@ show_hero: true
 menu:
   - title: "主页"
     url: /
+  - title: "标签"
+    url: /tags
   - title: "SB语录"
     url: /SB-Quotation-Content
     # /pages/SB-Quotation.html
+  - title: "PVZ杂交版"
+    url: https://nbboy.lanzn.com/b0sxa713i#elpn
+  - title: "BingAI"
+    url: https://bingai.icer233.us.kg/web/#/
+  - title: "Github下载加速"
+    url: https://ghproxy.icer233.us.kg/
   - title: "Unicode转换"
     url: /unicode-tools
-  - title: "标签"
-    url: /tags
   - title: "留言"
     url: /contact
 email: tommydai0909@163.com
