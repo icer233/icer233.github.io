@@ -17,6 +17,8 @@ menu:
   - title: "SB语录"
     url: /SB-Quotation-Content
     # /pages/SB-Quotation.html
+  - title: "MC原版模组入门指南"
+    url: /VanillaModTutorial
   - title: "PVZ杂交版"
     url: https://nbboy.lanzn.com/b0sxa713i#elpn
   - title: "BingAI"
