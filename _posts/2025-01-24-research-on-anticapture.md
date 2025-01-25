@@ -69,6 +69,8 @@ math: false
 
 我直接用了ShareBit大佬程序中的dll.
 
+在加载函数中加入`LoadLibraryA("mydll.dll");`
+
 最后, 编译一下, 放到网课程序根目录下即可
 
 如果你对这部分不熟悉的话, 可以参考这个保姆级教程: [劫持系统dll制作_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1nv4y1S7GD/)
