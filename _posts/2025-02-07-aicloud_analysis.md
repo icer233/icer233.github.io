@@ -1086,7 +1086,7 @@ DWORD WINAPI MonitorThread(LPVOID lpParam) {
 
 然后我们在dll注入时启动这个线程即可
 
-```C++
+```c++
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
     switch (ul_reason_for_call) {
     case DLL_PROCESS_ATTACH:
