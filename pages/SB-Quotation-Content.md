@@ -640,6 +640,18 @@ permalink: /SB-Quotation-Content/
 |   622   |              焯一焯最多5分钟               |   WZX   |   XS   |       YLH       |
 |   623   |               YLH不动就WZX动               |   PX    |  HXLS  |                 |
 |   624   |               你干了还说你妈               |   WLP   |  YWLS  |       LY        |
+|   625   |             我调教她了两个小时             |   LZY   |   XS   |                     |
+|   626   |                把TYL导湿了                 |   LZY   |   XS   |                     |
+|   627   |                  是小烧杯                  |   PX    |  HXLS  |                     |
+|   628   |              CSJ菊花好不好看               |   WLP   |  YWLS  |                     |
+|   629   |                  我要撅璐                  |   LZY   |   XS   |                     |
+|   630   |                  口我口我                  |   LZY   |   XS   |                     |
+|   631   |  CZM爽了，莫名其妙被XJW做了，自己都不知道  |   LZY   |   XS   |                     |
+|   632   |             你们是鸡鸡粘的大神             |   PX    |  HXLS  | SZX&XHT&LZY&LYJ&CSJ |
+|   633   |                 我上面射了                 |   YLH   |   XS   |                     |
+|   634   |                 让CZM交你                  |   ZSH   |   XS   |         OSH         |
+|   635   |               我不让CZM交我                |   OSH   |   XS   |                     |
+|   636   |                太小了看不见                |   YLH   |   XS   |         WZX         |
 
 >ε=ε=ε=┏(゜ロ゜;)┛
 
@@ -648,11 +660,11 @@ permalink: /SB-Quotation-Content/
 
 | 排名 | 名字 | 次数 |
 | :--: | :--: | :--: |
-|  1   | TYL  | 128  |
+|  1   | TYL  | 130  |
 |  2   | ZZX  | 111  |
-|  3   | CZM  |  93  |
-|  4   | XJW  |  72  |
-|  5   | YLH  |  67  |
+|  3   | CZM  |  96  |
+|  4   | XJW  |  73  |
+|  5   | YLH  |  69  |
 
 
 
