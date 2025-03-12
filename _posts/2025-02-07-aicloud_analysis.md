@@ -4,7 +4,7 @@ layout: post
 title: "爱问云分析报告"
 subtitle: "不要再为爱问云的种种限制而苦恼了"
 description: "不要再为爱问云的种种限制而苦恼了"
-image: https://img.icer233.us.kg/20250207130930690.png
+image: https://icer233.github.io/assets/postimg/2025/02/07/2.png
 optimized_image:
 category: code
 tags:
@@ -37,7 +37,7 @@ GET https://wwwr.aiwenyun.cn/static/yxt/image/loginBg_new2.jpg
 
 我们可以劫持这个包， 实现如下效果：
 
-![](https://img.icer233.us.kg/loginBG_modified.png)
+![](https://icer233.github.io/assets/postimg/2025/02/07/1.png)
 
 #### 检测用户是否使用了虚拟机
 
@@ -443,7 +443,7 @@ POST https://www.aiwenyun.cn/yxt/servlet/org/menu
 
 可以劫持修改：
 
-![](https://img.icer233.us.kg/menu%26banner_modified.png)
+![](https://icer233.github.io/assets/postimg/2025/02/07/2.png)
 
 ### 在线课堂
 
@@ -1196,3 +1196,393 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     return TRUE;
 }
 ```
+
+### 资源文件
+
+通过查看爱问云的安装目录, 不难发现这是一个 Electron 打包程序
+
+#### 窗口信息
+
+打开 `AiCloud\resources\app\package.json` , 内容如下
+
+```json
+{
+    "name": "ai_client",
+    "version": "1.07.126",
+    "description": "",
+    "keywords": [
+        "Plaso"
+    ],
+    "homepage": ".",
+    "main": "main.js",
+    "scripts": {
+        "build:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=build --electron-version=5.0.13",
+        "build:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=build --electron-version=5.0.13"
+    },
+    "dependencies": {
+        "@plasosdk/plasoffmpeg": "^1.1.0",
+        "@plasosdk/rbtusbaddon": "^1.0.1",
+        "@plasosdk/rbtwifiaddon": "^1.0.2",
+        "@plasosdk/rtmpplayer": "^2.0.0",
+        "@plasosdk/screenshot": "^1.2.1",
+        "@plasosdk/winproxy": "^1.0.0",
+        "agora-electron-sdk": "4.2.6-build.126-rc.1",
+        "trtc-electron-sdk": "10.3.112-beta.13"
+    },
+    "agora_electron": {
+        "electron_version": "12.0.0",
+        "prebuilt": true,
+        "arch": "x32"
+    },
+    "chromium-args": "--ignore-certificate-errors --enable-usermedia-screen-capturing --ignore-gpu-blacklist --disable-gpu",
+    "default_locale": "en",
+    "electron": "12.0.18",
+    "marketString": "",
+    "node-remote": true,
+    "oemName": "ai",
+    "single-instance": false,
+    "webkit": {
+        "plugin": true
+    },
+    "window": {
+        "title": "爱问云",//爱问云窗口标题
+        "icon": "icon.png",//爱问云窗口logo
+        "toolbar": false,
+        "transparent": false,
+        "show": true,
+        "width": 1280,//窗口大小
+        "height": 720,//窗口大小
+        "min_width": 1280,//窗口最小大小
+        "min_height": 720,//窗口最小大小
+        "frame": true//是否显示边框
+    }
+}
+```
+
+可以看到第39行的 `"window"` 字典里的信息定义里打开爱问云后的窗口信息, 可以修改, 经测试有效, 图片就不附了
+
+#### main.js
+
+打开 `AiCloud\resources\app\main.js`, 这是一个 js 脚本文件, 里面甚至包含了开发者的注释以及解决一些问题的帖子, 哈哈哈
+
+但是我对这方面不是很熟悉, 大家有兴趣可以研究一下
+
+```js
+const isElectron = !!process.versions['electron'];
+if (isElectron) {
+  const screenshot = require('./lib/screenshot/screenshot');
+  const preview = require('./lib/preview/preview');
+  const closePopup = require('./lib/closePopup/closePopup');
+  const Store = require('electron-store');
+  try {
+    require('@plasosdk/winproxy');
+    require('@plasosdk/screenshot');
+    require('@plasosdk/rtmpplayer');
+  } catch (e) {
+    console.log(e);
+  }
+  const path = require('path');
+  const fs = require('fs');
+  const os = require('os');
+  const {
+    app,
+    crashReporter,
+    Menu,
+    ipcMain,
+    BrowserWindow,
+    powerSaveBlocker,
+    globalShortcut,
+    dialog,
+    powerMonitor,
+  } = require('electron');
+  const isDarwin = process.platform == 'darwin';
+  const id = powerSaveBlocker.start('prevent-display-sleep');
+
+  const { exec } = require('child_process');
+
+  let mainWindow = null;
+
+  const gotTheLock = app.requestSingleInstanceLock();
+
+  if (!gotTheLock && app.isPackaged) {
+    app.quit();
+  } else {
+    const url = require('url');
+    const args = process.argv.filter((arg) => arg.indexOf('-') == 0);
+    const isDebug = args.some((one) => one == '--debug');
+    let title = '', icon = '', manifest;
+    let oemName = '';
+
+    // 创建electron数据存储实例
+    const store = new Store();
+
+    if (args.length > 0 && args[0].toLocaleLowerCase().indexOf('dev') >= 0) {
+      app.commandLine.appendSwitch('--ignore-certificate-errors', 'true');
+    }
+    if(os.platform() === 'win32' && os.release().split('.')[0] <= 6) {
+      app.commandLine.appendSwitch('--ignore-certificate-errors', 'true');
+    }
+    try {
+      manifest = JSON.parse(fs.readFileSync(path.join(__dirname, './package.json')).toString());
+      title = manifest.window.title;
+      icon = manifest.window.icon;
+      oemName = manifest.oemName;
+      if (isDarwin) app.setName(title);
+    } catch (err) {
+      title = '';
+      console.log('fs read file error');
+    }
+
+    // 匹配通过命令参数设置的oemName值
+    const matchedOemNameArg = args.find(item => /^-o/g.test(item));
+    if (matchedOemNameArg) {
+      oemName = matchedOemNameArg.substring(2).toLowerCase();
+    }
+
+    if (store.get('enableGPU')=== false) {//默认开启gpu加速功能
+      app.commandLine.appendSwitch('disable-gpu', true);
+    }
+
+    if (store.get('clientScaling') === false) {
+      app.commandLine.appendSwitch('high-dpi-support', 1);
+      app.commandLine.appendSwitch('force-device-scale-factor', 1);
+    }
+
+    app.allowRendererProcessReuse = false;
+    // 首次添加此开关是为了解决一些GPU导致的渲染问题的，比如进课堂白屏，历史课堂播放进度条不动。
+    // 支持虚拟声卡需要添加此开关
+    app.commandLine.appendSwitch('--no-sandbox')
+
+    function createWindow(event) {
+      Menu.setApplicationMenu(null);
+      // Create the browser window.
+      mainWindow = new BrowserWindow({
+        width: 1280,
+        height: 720,
+        minWidth: 1280,
+        minHeight: 720,
+        title: title,
+        icon: path.join(__dirname, icon),
+        webPreferences: {
+          contextIsolation: false, // fix: https://github.com/electron/electron/issues/18139
+          nodeIntegration: true,
+          enableRemoteModule: true,
+          spellcheck: false,
+          // nativeWindowOpen: true,
+          // allowRendererProcessReuse: true,
+        },
+      });
+      //【【PC-隐私政策】【集成】【线上问题】点击查看第三方隐私政策，白屏】
+      // https://www.tapd.cn/50221454/bugtrace/bugs/view/1150221454001035168
+      mainWindow.webContents.session.webRequest.onHeadersReceived({ urls: [ "*://*/*" ] },
+        (d, c)=>{
+          if(d.responseHeaders['X-Frame-Options']){
+            delete d.responseHeaders['X-Frame-Options'];
+          } else if(d.responseHeaders['x-frame-options']) {
+            delete d.responseHeaders['x-frame-options'];
+          }
+
+          c({cancel: false, responseHeaders: d.responseHeaders});
+        }
+      );
+      mainWindow.webContents.on(
+        'new-window',
+        (event, url, frameName, disposition, options, additionalFeatures) => {
+          event.preventDefault();
+          let windowObj = {
+            parent: mainWindow,
+            x:0,
+            y:0, // 【【PC-分享】巩固分享至QQ空间，QQ空间弹框右移了遮挡住了右上角关闭按钮和全屏按钮的显示】https://www.tapd.cn/50221454/bugtrace/bugs/view/1150221454001021199
+            webContents: options.webContents, // use existing webContents if provided
+          };
+          Object.assign(windowObj, options);
+          if (frameName == 'preview') {
+            //preview modal
+            windowObj.fullscreen = true;
+          } else if (frameName == 'classroom') {
+            windowObj.nodeIntegration = false;
+            windowObj.modal = true;
+          }
+          // else if (frameName == 'screenshot') {
+          //     screenshot(source, mainWindow)
+          // }
+          const win = new BrowserWindow(windowObj);
+          if (!options.webContents) {
+            win.loadURL(url); // existing webContents will be navigated automatically
+          }
+          event.newGuest = win;
+          const webContents = event.newGuest.webContents;
+
+          if (args.length > 0 && args[0].toLocaleLowerCase().indexOf('dev') >= 0) {
+            webContents.on(
+              'certificate-error',
+              (event, webContents, url, error, certificate, callback) => {
+                event.preventDefault();
+                callback(true);
+              },
+            );
+          }
+          if (isDebug) {
+            webContents.openDevTools({ mode: 'detach' });
+          }
+        },
+      );
+
+      // 电源关机/重启，直接结束app，不提示关闭，不阻挡系统关机。
+      powerMonitor.on('shutdown', () => {
+        app.exit(0);
+      });
+      mainWindow.on('close', (event) => {
+        event.preventDefault()
+        mainWindow.restore()
+        closePopup(mainWindow, {
+          oemName,
+          debug: isDebug
+        })
+      })
+
+      // and load the index.html of the app.
+
+      mainWindow.loadURL(
+        url.format({
+          pathname: path.join(__dirname, 'update.html'),
+          protocol: 'file:',
+          slashes: true,
+        }),
+      );
+
+      if (isDebug) {
+        mainWindow.webContents.openDevTools({ mode: 'detach' });
+      }
+
+      // 如果是开发环境 监听快捷键开启|关闭调试 也可以连续点击logo五次开启
+      if (!app.isPackaged) {
+        const ret = globalShortcut.register('CommandOrControl+Shift+i', () => {
+          if (mainWindow.webContents.isDevToolsOpened()) {
+            mainWindow.webContents.closeDevTools();
+          } else {
+            mainWindow.webContents.openDevTools({ mode: 'detach' });
+          }
+        });
+
+        if (!ret) {
+          console.log('registration debug shortcut failed');
+        }
+      }
+    }
+
+    ipcMain.on('synchronous-message', (event, arg) => {
+      let cmd = arg,
+        params = [];
+      if (typeof arg == 'object' && !Array.isArray(arg)) {
+        cmd = arg.cmd;
+        params = arg.params;
+      }
+      switch (cmd) {
+        case 'argv':
+          event.returnValue = args;
+          break;
+        case 'manifest':
+          event.returnValue = manifest;
+          break;
+        case 'relaunch':
+          ipcMain.removeAllListeners();
+          app.relaunch({
+            args: process.argv.slice(1).concat(['--relaunch', ...params]),
+          });
+          app.exit(0);
+          event.returnValue = '';
+          break;
+        case 'quit':
+          app.exit();
+          break;
+        case 'shareToQQ':
+          {
+            const shareWin = new BrowserWindow();
+            shareWin.loadURL(params);
+          }
+          break;
+        default:
+          event.returnValue = 'no such command!!';
+          break;
+      }
+    });
+
+    ipcMain.handle('getStoreValue', (event, key) => {
+      return store.get(key);
+    })
+
+    ipcMain.handle('setStoreValue', (event, key, value) => {
+      store.set(key, value);
+      return true
+    })
+
+    // 获取进程
+    const getData = (type) => {
+      const cmd = type === 'mac'?'ps -Aco command':'tasklist'
+      return new Promise((resolve,reject)=>{
+        exec(cmd, (err, stdout) => {
+          if (err) {
+              return console.error(err);
+          }
+          if (stdout) {
+            resolve(stdout)
+          }
+        });
+      })
+    }
+
+    ipcMain.handle('getSystemProcess', async (event,type) => {
+      const data = await getData(type);
+      return data;
+    })
+
+
+    const tempPath = path.join(app.getPath('userData'), "/P403FileTemp/");
+    app.setAppLogsPath([tempPath])
+    app.setPath("crashDumps", tempPath)
+    crashReporter.start({ submitURL: '', uploadToServer: false })
+
+    app.on('ready', () => {
+      createWindow();
+      screenshot(mainWindow);
+      preview(mainWindow);
+    });
+
+    app.on('window-all-closed', function () {
+      app.quit();
+    });
+
+    app.on('activate', function () {
+      if (app.isReady() && BrowserWindow.getAllWindows().length === 0) createWindow();
+    });
+    app.on('will-quit', function () {
+      if (powerSaveBlocker.isStarted(id)) {
+        powerSaveBlocker.stop(id);
+      }
+      if (!app.isPackaged) {
+        globalShortcut.unregister('CommandOrControl+Shift+i');
+      }
+    });
+    app.on('second-instance', (event, commandLine, workingDirectory) => {
+      // 当运行第二个实例时,将会聚焦到mainWindow这个窗口
+      if (mainWindow) {
+        if (mainWindow.isMinimized()) mainWindow.restore();
+        mainWindow.focus();
+      }
+    });
+  }
+} else {
+  const nw = require('nw.gui');
+  const { width, height, min_width, min_height, frame, show, title } = nw.App.manifest.window;
+  nw.Window.open(
+    'update.html',
+    { width, height, min_width, min_height, frame, show, title },
+    function (win) {
+      console.log(win);
+    },
+  );
+}
+
+```
+

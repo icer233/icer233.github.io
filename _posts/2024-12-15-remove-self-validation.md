@@ -4,7 +4,7 @@ layout: post
 title: "实战去除程序自校验"
 subtitle: "不写补丁去除程序md5自校验"
 description: "不写补丁去除程序md5自校验"
-image: https://img.icer233.us.kg/image-20241214213236087.png
+image: https://icer233.github.io/assets/postimg/2024/12/15/1.png
 optimized_image:
 category: code
 tags:
@@ -23,17 +23,17 @@ math: false
 
 ### 豪迪群发助手
 
-![image-20241214200003610](https://img.icer233.us.kg/image-20241214200003610.png)
+![image-20241214200003610](https://icer233.github.io/assets/postimg/2024/12/15/1.png)
 
 ## 解决网络验证
 
 1. 将主程序`qqqf.exe`拖入OD并搜索字符串, 找到`00541879`"**已注册版本**"
 
-![image-20241214194355902](https://img.icer233.us.kg/image-20241214194355902.png)
+![image-20241214194355902](https://icer233.github.io/assets/postimg/2024/12/15/2.png)
 
 2. 在`00541870`和`00541877`下断点, 运行程序, 点击注册, 发现断下来了。右键查找常量, 输入`cmp`比较的变量`00579F24`。将搜索出来的操作全部下断点。
 
-![image-20241214200357590](https://img.icer233.us.kg/image-20241214200357590.png)
+![image-20241214200357590](https://icer233.github.io/assets/postimg/2024/12/15/3.png)
 
 3. 重载程序并运行, 停在`00541650`处
 
@@ -96,35 +96,35 @@ math: false
 
 9. 保存修改, 随便输入12位注册码, 竟然失败了
 
-    ![image-20241214213236087](https://img.icer233.us.kg/image-20241214213236087.png)
+    ![image-20241214213236087](https://icer233.github.io/assets/postimg/2024/12/15/4.png)
 
 10. 再次载入OD，发现破解过程应该没问题，已经赋值为1了，再次搜索字符串，发现了“正在验证”四个字，我们在这里回车进去, 找到段首`005408C8`直接`retn`使它脱离网络验证
 
 11. 测试一下, 随意输入, 注册成功, 可以添加表情等, 但是随机字符等功能没法使用, 出现了暗桩
 
-     ![image-20241214213629619](https://img.icer233.us.kg/image-20241214213629619.png)
+     ![image-20241214213629619](https://icer233.github.io/assets/postimg/2024/12/15/5.png)
 
 ## 查找自校验
 
 1. 用`Winhex`随意修改原主程序, 发现功能失效, 这是因为文件的md5发生了变化**(可以采用补丁破解)**
 
-   ![image-20241214213959847](https://img.icer233.us.kg/image-20241214213959847.png)
+   ![image-20241214213959847](https://icer233.github.io/assets/postimg/2024/12/15/6.png)
 
 2. 使用脚本`脱壳脚本\各语言按钮事件\Delphi & VB事件断点查找脚本.osc`([下载地址](https://icer233.github.io/assets/resources/脱壳脚本.rar))
 
 3. 打开OD, 运行该脚本
 
-   ![image-20241214214629445](https://img.icer233.us.kg/image-20241214214629445.png)
+   ![image-20241214214629445](https://icer233.github.io/assets/postimg/2024/12/15/7.png)
 
 4. 这样就查找到了所有按钮事件并打上了断点
 
-   ![image-20241214214709686](https://img.icer233.us.kg/image-20241214214709686.png)
+   ![image-20241214214709686](https://icer233.github.io/assets/postimg/2024/12/15/8.png)
 
 5. 运行程序, 点击"**插入其他**", 触发断点, 先禁用这个断点, 再点击"**插入其他**"里的"**随机数字**"触发第二个断点, 记住位置, 将其他断点删除, 开始单步过
 
 6. 计算一下我们修改后的程序md5
 
-   ![image-20241214215836703](https://img.icer233.us.kg/image-20241214215836703.png)
+   ![image-20241214215836703](https://icer233.github.io/assets/postimg/2024/12/15/9.png)
 
 7. 找到这个`call`, `F7`进入
 
@@ -142,7 +142,7 @@ math: false
 
    在数据窗口中跟随后, 发现就是我们文件的md5
 
-   ![image-20241214220051344](https://img.icer233.us.kg/image-20241214220051344.png)
+   ![image-20241214220051344](https://icer233.github.io/assets/postimg/2024/12/15/10.png)
 
 9. 计算原版md5为`11ea70a3c3735c29b48552776756406a`, 直接在数据窗口里替换
 
@@ -152,11 +152,11 @@ math: false
 
 1. 找一段空的地址, 如`0056B0A0`
 
-   ![image-20241214223518373](https://img.icer233.us.kg/image-20241214223518373.png)
+   ![image-20241214223518373](https://icer233.github.io/assets/postimg/2024/12/15/11.png)
 
 2. 将`004B1F74`改成`jmp 0056B0A0`
 
-   ![image-20241214223655066](https://img.icer233.us.kg/image-20241214223655066.png)
+   ![image-20241214223655066](https://icer233.github.io/assets/postimg/2024/12/15/12.png)
 
 3. 第一行输入`pushad`（堆栈平衡）
 
@@ -164,11 +164,11 @@ math: false
 
    输入`mov dword ptr ss:[ebp-0x14],0x0`, 在数据窗口中改为正版md5
 
-   ![image-20241215193945081](https://img.icer233.us.kg/image-20241215193945081.png)
+   ![image-20241215193945081](https://icer233.github.io/assets/postimg/2024/12/15/13.png)
 
 5. 再将`0x0`改为堆栈窗口中的`0xA370EA11`
 
-   ![image-20241215194026069](https://img.icer233.us.kg/image-20241215194026069.png)
+   ![image-20241215194026069](https://icer233.github.io/assets/postimg/2024/12/15/14.png)
 
 7. 第一个操作数每次减4，16个字节需要写入四次（我们要想写入原来的md5数据就要用这个值，数据窗口中我们看到每4个字节就要进行一次写入）
 
@@ -199,7 +199,7 @@ math: false
 
    下一行输入`popad`堆栈平衡, 然后`jmp 004B1F91`跳回去!
 
-   ![image-20241215195146240](https://img.icer233.us.kg/image-20241215195146240.png)
+   ![image-20241215195146240](https://icer233.github.io/assets/postimg/2024/12/15/15.png)
 
 9. 至此, 破解成功!
 

@@ -4,7 +4,7 @@ layout: post
 title: "如何更好地在Windows上隐藏文件"
 subtitle: "隐藏文件有两大宗旨。第一是别人找不到，第而是自己可以轻松方便地找到。"
 description: "隐藏文件有两大宗旨。第一是别人找不到，第而是自己可以轻松方便地找到。"
-image: https://img.icer233.us.kg/20250101170853107.png
+image: https://icer233.github.io/assets/postimg/2025/01/01/7.png
 optimized_image:
 category: skills
 tags:
@@ -33,21 +33,21 @@ math: false
 
 2. 删除名字，右键选择插入Unicode，随便选择一个。这样你就能获得一个没有名字的文件夹
 
-   ![](https://img.icer233.us.kg/20250101165146788.png)
+   ![](https://icer233.github.io/assets/postimg/2025/01/01/1.png)
 
 3. 按照下图操作将文件夹图标也改为透明的
 
-   ![](https://img.icer233.us.kg/20250101165524710.png)
+   ![](https://icer233.github.io/assets/postimg/2025/01/01/2.png)
 
 4. 如果你的文件夹像下图一样变为黑色而不是透明，可以把它放到除了桌面以外的文件夹，就透明了
 
-   ![](https://img.icer233.us.kg/20250101165639028.png)
+   ![](https://icer233.github.io/assets/postimg/2025/01/01/3.png)
 
 ### 使用方法
 
 1. 用鼠标划框即可选中
 
-   ![](https://img.icer233.us.kg/20250101165811354.png)
+   ![](https://icer233.github.io/assets/postimg/2025/01/01/4.png)
 
 ### 解除方法
 
@@ -59,13 +59,13 @@ math: false
 
 1. 右键-属性-勾选”隐藏“-确定
 
-   ![](https://img.icer233.us.kg/20250101170204066.png)
+   ![](https://icer233.github.io/assets/postimg/2025/01/01/5.png)
 
    ### 使用方法
 
    1. 在文件资源管理器中点击查看-显示-勾选”隐藏的项目“即可看到隐藏的文件
 
-      ![](https://img.icer233.us.kg/20250101170342583.png)
+      ![](https://icer233.github.io/assets/postimg/2025/01/01/6.png)
 
 ### 解除方法
 
@@ -85,7 +85,7 @@ math: false
 
 1. 点击三个点-选项-查看-取消勾选”隐藏受保护的操作系统文件（推荐）“选项
 
-   ![](https://img.icer233.us.kg/20250101170853107.png)
+   ![](https://icer233.github.io/assets/postimg/2025/01/01/7.png)
 
 ### 解除方法
 
