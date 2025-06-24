@@ -652,19 +652,45 @@ permalink: /SB-Quotation-Content/
 |   634   |                 让CZM交你                  |   ZSH   |   XS   |         OSH         |
 |   635   |               我不让CZM交我                |   OSH   |   XS   |                     |
 |   636   |                太小了看不见                |   YLH   |   XS   |         WZX         |
+|   637   |               YLH一叶两个插                |   PX    |  HXLS  |                     |
+|   638   |              哈哈哈，我太爽了              |   YLH   |   XS   |                     |
+|   639   |                把你的球给我                |   PX    |  HXLS  |         WYX         |
+|   640   |                 你别扣我了                 |   LZY   |   XS   |                     |
+|   641   |            试了很多次都爽不起来            |   WYX   |   XS   |                     |
+|   642   |                 你是性感JB                 |   LZ    |   XS   |         ZQY         |
+|   643   |                 我和WZX69                  |   YLH   |   XS   |                     |
+|   644   |                我今天刚交的                |   ZZX   |   XS   |                     |
+|   645   |                  某XP软件                  |   WYX   |   XS   |                     |
+|   646   |                 我又老又热                 |   PX    |  HXLS  |                     |
+|   647   |               YLH让你调教她                |   ZSH   |   XS   |         YZY         |
+|   648   |                100遍焯死你                 |   LL    |  YYLS  |                     |
+|   649   |           我都把我的水贡献给你了           |   MJN   |   XS   |                     |
+|   650   |             你是装在套子里的人             |   WLP   |  YWLS  |         XJW         |
+|   651   |                   你丰满                   |   WLP   |  YWLS  |         XJW         |
+|   652   |               我就想吃掉ZZX                |   LL    |  YYLS  |                     |
+|   653   |                  你挑逗我                  |   LL    |  YYLS  |                     |
+|   654   |           你最好以后对TYL好一点            |   ZSH   |   XS   |         WZX         |
+|   655   |               摸TYL不如摸XJW               |   SZX   |   XS   |                     |
+|   656   |                  注意身体                  |   PX    |  HXLS  |         ZSH         |
+|   657   |              我给CSJ写了情书               |   LYX   |   XS   |                     |
+|   658   |               非要我焯你一下               |   LL    |  YYLS  |         ZZX         |
+|   659   |          我说我怎么导半天导不出来          |   SZX   |   XS   |                     |
+|   660   |              你刚刚是在玩我吗              |   OSH   |   XS   |                     |
 
 >ε=ε=ε=┏(゜ロ゜;)┛
+>
+>2025.06.24 最后一次更新，完结撒花
 
 ## 最SB的人提名奖获得者名单
 
 
 | 排名 | 名字 | 次数 |
 | :--: | :--: | :--: |
-|  1   | TYL  | 130  |
-|  2   | ZZX  | 111  |
+|  1   | TYL  | 132  |
+|  2   | ZZX  | 114  |
 |  3   | CZM  |  96  |
-|  4   | XJW  |  73  |
-|  5   | YLH  |  69  |
+|  4   | XJW  |  76  |
+|  5   | YLH  |  73  |
 
 
 

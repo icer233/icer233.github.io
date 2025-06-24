@@ -35,78 +35,113 @@ math: true
 **解答** 
 
 由密舍尔斯基方程
+
 $$
 M\dfrac{\text{d}v}{\text{d}t}=F-v\dfrac{\text{d}M}{\text{d}t}\tag{1}
 $$
+
 将
+
 $$
 M=M_0-kt,\ \dfrac{\text{d}M}{\text{d}t}=-k,\ F=Mg(\sin\theta-\mu\cos\theta)
 $$
+
 代入得
+
 $$
 (M_0-kt)\dfrac{\text{d}v}{\text{d}t}=kv+(M_0-kt)g(\sin\theta-\mu\cos\theta)\tag2
 $$
+
 又有
+
 $$
 \dfrac{\text{d}v}{\text{d}t}=\dfrac{\text{d}v}{\text{d}M}\dfrac{\text{d}M}{\text{d}t}=-k\dfrac{\text{d}v}{\text{d}M}
 $$
+
 故
+
 $$
 -kM\dfrac{\text{d}v}{\text{d}M}=kv+Mg(\sin\theta-\mu\cos\theta)\tag3
 $$
+
 记
+
 $$
 A=g(\sin\theta-\mu\cos\theta)
 $$
+
 从而
+
 $$
 (kv+AM)\text{d}M+kM\text{d}v=0
 $$
+
 改写一下方程
+
 $$
 k\text{d}(Mv)+AM\text{d}M=0
 $$
+
 这是一个全微分方程, 代入初始条件 $M=M_0$ , $v=0$ , 从而
+
 $$
 kMv+\dfrac12AM^2=\dfrac12M_0^2
 $$
+
 计算得
+
 $$
 v=\dfrac{A}{2k}\cdot\dfrac{M_0^2-M^2}{M}
 $$
+
 代入化简得
+
 $$
 v=\dfrac{A}{2}\cdot\dfrac{2M_0-kt}{M_0-kt}t\tag6
 $$
+
 又有
+
 $$
 v=\dfrac{\text{d}x}{\text{d}t}
 $$
+
 代入 $(6)$ 得
+
 $$
 \text{d}x=\dfrac{A}{2}\cdot\dfrac{2M_0-kt}{M_0-kt}t\text{d}t\tag7
 $$
+
 两边积分
+
 $$
 x(t)=\dfrac{A}{2}\int^t_0\dfrac{2M_0-kt}{M_0-kt}t\text{d}t
 $$
+
 得到
+
 $$
 x(t)=\dfrac{g(\sin\theta - \mu\cos\theta)}{4k^2} \left[ k^2 t^2 - 2k M_0 t + 2M_0^2 \ln\left(\frac{M_0}{M_0 - kt}\right) \right]\tag8
 $$
+
 接下来, 对这个式子进行一下讨论
 
 $1\degree$ 若 $\mu \gt \tan\theta$ , 则小物块根本不会滑动
+
 $$
 \boxed{x_f=0}\tag9
 $$
+
 $2\degree$ 若 $\mu\leq\tan\theta$ , 小物块可以滑动
 
 小物块停止滑动时, 有
+
 $$
 t^*=\dfrac{m_0}{k}\tag{10}
 $$
+
 则小物块停在
+
 $$
 \boxed{x_f=x(t^*)=\dfrac{g(\sin\theta-\mu\cos\theta)}{4k^2} \left[ m_0^2 - 2M_0 m_0 + 2M_0^2 \ln\left(\frac{M_0}{M_0 - m_0}\right) \right]}\tag{11}
 $$
