@@ -25,6 +25,8 @@ menu:
     url: https://bingai.icer233.us.kg/web/#/
   - title: "Github下载加速"
     url: https://ghproxy.icer233.us.kg/
+  - title: "OI教练模拟器"
+    url: /otrainer
   - title: "Unicode转换"
     url: /unicode-tools
   - title: "留言"
